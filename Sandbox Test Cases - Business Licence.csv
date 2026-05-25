@@ -1,0 +1,1671 @@
+S .No,Sub feature,Scenario,Test Type,Test Data,Steps to execute,Expected result,Observation( Pass/fail),Comment
+BL/01,Common PT Create,Login as a Counter Employee and navigates to new UI,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue",Redirects to new UI,,
+BL/02,,"Check if ""Trade License card"" has following options
+1. Apply for Trade License
+2. Renew Trade License
+3. My Applications",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue","""Trade License card"" has following options
+1. Apply for Trade License
+2. Renew Trade License
+3. My Applications",,
+BL/03,,"Check onClicking on ""Apply for Trade License"" navigates to Trade license Registration screen",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License",Navigates to Trade License Registrations screen,,
+BL/04,,"Click on Next button check if page navigates to ""Enter your Trade Name"" screen",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next","Navigates to ""Enter Your Trade Name"" screen",,
+BL/05,,Enter trade name and click on Next and check if navigates to Confirm Structure Type screen,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next",Navigates to Confirm Strcuture Type screen,,
+BL/06,,"Check if Confirm Strcuture Type has following options 
+1. Yes radio button
+2. No radio button",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next","Confirm Strcuture Type has following options 
+1. Yes radio button
+2. No radio button",,
+BL/07,,Check onclicking either of the option Next button is enabled,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Click on Yes/No",onclicking either of the option Next button is enabled,,
+BL/08,,Click on Next button and click of page navigates to Building Type,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No",Navigates to Building Type,,
+BL/09,,"Check if Building Type has following options
+1. Pucca radio button
+2. Kutcha radio button",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No","Building Type has following options
+1. Pucca radio button
+2. Kutcha radio button",,
+BL/10,,Check onclicking either of the option Next button is enabled,UX,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha",onclicking either of the option Next button is enabled,,
+BL/11,,Click on Next button and click of page navigates to Trade Commencement Date,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next",navigates to Trade Commencement Date,,
+BL/12,,Check if able to pick desired date and if Next button is enabled,UX,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date",Able to pick desired and Next button is enabled,,
+BL/13,,Click on Next button and click of page navigates to Trade Units screen,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next",navigates to Trade Units screen,,
+BL/14,,"Check if Trade Units Screen has following details
+1. Trade Category
+Good Radio button
+Services Radio button
+2. Trade Type dropdown
+3. Trade Sub-Type dropdown
+4. unit of measure
+5. UOM Value
+6. Add More Trade Units
+7. Next button",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next","Trade Units Screen has following details
+1. Trade Category
+Good Radio button
+Services Radio button
+2. Trade Type dropdown
+3. Trade Sub-Type dropdown
+4. unit of measure
+5. UOM Value
+6. Add More Trade Units
+7. Next button",,
+BL/15,,Check if Next button is enabled after details are entered,UX,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next",Next button is enabled,,
+BL/16,,Click on Next button and click of page navigates to Do you have any accessories? with Yes/No radio buttons,Functional/UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next",navigates to Do you have any accessories? with Yes/No radio buttons,,
+BL/17,,Check onclicking either of the option Next button is enabled,UX,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next",NExt button is enabled,,
+BL/18,,check on choosing Yes option navigates to Trade Accessories screen,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes",navigates to Trade Accessories screen,,
+BL/19,,"Check if Trade Accessories screen has following Details
+1. Accessory dropdown
+2. Accessory Count
+3. unit of measure
+4. UOM Value
+5. Add More Trade Accessories
+6. Next button",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes","Trade Accessories screen has following Details
+1. Accessory dropdown
+2. Accessory Count
+3. unit of measure
+4. UOM Value
+5. Add More Trade Accessories
+6. Next button",,
+BL/20,Link Property,"Enter mandatory details and click on Next button check if it navigates to ""Do you know your property?"" screen",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next","Navigates to ""Do you know your property?"" screen",,
+BL/21,,"Check if ""Do you know your property?"" has Yes/No radio button options",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next","Do you know your property?"" has Yes/No radio button options 
+PT/TL&PT/22 Link Property Check onclicking either of the option Next button is enabled UX ""Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next",,
+BL/22,,"Check onclicking either of the option Next button is enabled UX ""Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next"" NExt button is enabled",,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next",,,
+BL/23,,"Check On selecting Yes, page redirects to Search property",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes",Navigates to Search property page,,
+BL/24,,"Check on selecting No, if page has no option to create new property in TL then redirect to Location details(GIS) page",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select No",Navigates to GIS page,,
+BL/25,Create New property,Check on Selecting NO and city has option to create new property then navigate to create lightweight PT page with skip option below,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select No",navigate to create lightweight PT page with skip option below,,
+BL/26,Create New property,Check if user enters the property details and clicks Next on Create property (for TL applicaiton) page navigates to Success screen,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select No",Navigates to Success screen,,
+BL/27,Create New property,"Check if Success screen has following details
+1.Message ""Property created Successfully""
+2.Reference No
+3. Proceed",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select No","Success screen has following details
+1.Message ""Property created Successfully""
+2.Reference No
+3. Proceed",,
+BL/28,Create TL,Check on clicking skip option redirects to GIS page,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select No
+Click on Skip",Redirects to GIS page,,
+BL/29,Search Property,"Check if these radio buttons are displayed under Search property text:
+1. I know my Property ID
+2. I want to search using Door Number",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes","these radio buttons are displayed under Search property text:
+1. I know my Property ID
+2. I want to search using Door Number",,
+BL/30,,"Check if these below mentioned details are displayed if I know my Property ID is selected:
+1. City - [Mandatory]
+2. Property ID
+3. Old Property ID
+4. Owner’s Mobile No.",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""","below mentioned details are displayed if I know my Property ID is selected:
+1. City - [Mandatory]
+2. Property ID
+3. Old Property ID
+4. Owner’s Mobile No.",,
+BL/31,,Check if Please provide atleast one parameter validation is dispalyed if user tried to search without entering any of the above mentioned fields,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""",Please provide atleast one parameter validation is dispalyed,,
+BL/32,,Check if (OR) text is displayed between search parameteres other than City,UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""",OR) text is displayed between search parameteres other than City,,
+BL/33,,Check if +91 is displayed in Owner's Mobile No. input field,UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""",#ERROR!,,
+BL/34,,Check if user is able to enter more than 10 digits in Owner's Mobile No. input field,UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""",user is able to enter more than 10 digits in Owner's Mobile No. input field,,
+BL/35,,Check if info icon is displayed near Property ID field,UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""",info icon is displayed near Property ID field,,
+BL/36,,Check if Your Property ID would look like PB-PT-XXXXXX. text is displayed if user hover on Info icon,UO,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I Know my property ID""",PB-PT-XXXXXX. text is displayed if user hover on Info icon,,
+BL/37,,"Check if these below mentioned details are displayed if I want to search using Door Number is selected:
+1. City - [Mandatory]
+2. Locality - [It is mandatory]
+3. Door No. - [Text entered is considered as one string]
+4. Consumer Name - [Text entered is considered as one string]",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I want to search using Door Number""","hese below mentioned details are displayed if I want to search using Door Number is selected:
+1. City - [Mandatory]
+2. Locality - [It is mandatory]
+3. Door No. - [Text entered is considered as one string]
+4. Consumer Name - [Text entered is considered as one string]",,
+BL/38,,"Check if Citizen is able to search property by selecting City, locality and entering one of the value from Owner name/Door Number",UX,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I want to search using Door Number""","Citizen is able to search property by selecting City, locality and entering one of the value from Owner name/Door Number",,
+BL/39,,"Check if on clicking Search button, relevant result is displayed to user",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button","on clicking Search button, relevant result is displayed to user",,
+BL/40,Link Property,"Check if below mentioned details are displayed in each Property tax card:
+1. Amount Due
+2. Property ID
+3. Owner's Name
+4. Address
+5. Status",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button","below mentioned details are displayed in each Property tax card:
+1. Amount Due
+2. Property ID
+3. Owner's Name
+4. Address
+5. Status",,
+BL/41,Link Property,Check if Link Property to Application button is dipslayed on Property card,UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button",Application button is dipslayed on Property card,,
+BL/42,Link Property,"Check if user is able to link property by clicking on ""Link Property to Application"" button",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button
+Click on Link Property to Application",user is able to link property by clicking on Link Property to Application button,,
+BL/43,Link Property,Check if page navigates to Property Details on choosing a property and clicking on Link property to application button,Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button
+Click on Link Property to Application",Navigates to Property Details page,,
+BL/44,Link Property,"Check if Property Details screen has following details
+1. Property ID
+2. Owner's Name
+3. Address
+4. Status
+5. View More Details
+6. Change Property
+7. Next button",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button
+Click on Link Property to Application","Property Details screen has following details
+1. Property ID
+2. Owner's Name
+3. Address
+4. Status
+5. View More Details
+6. Change Property
+7. Next button",,
+BL/45,Create TL,"check after view property details, on clicking Next page navigates to Document details",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button
+Click on Link Property to Application
+Click on Next",Navigates to Document details,,
+BL/46,Create TL,"Check after uploading the documents and clicked on Next , page navigates to summary screen",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button
+Click on Link Property to Application
+Click on Next 
+Click on Next",Navigates to Summary screen,,
+BL/47,Create TL,"Check if summary screen has following details displayed
+1.Trade Details
+Edit icon
+Trade Name
+Structure Type
+Structure Sub-type
+Trade Commensement Date
+Trade Category
+Trade Type
+Trade Sub-type
+Trade Accessory
+Accessory Count
+Accessory UOM
+Accessory UOM Value
+View Property link
+2. Location details
+Edit Icon
+Property ID
+Owner's Name
+Address
+Status
+View Property link
+3. Owner Details
+Edit Icon
+Name
+Gender 
+Guardian
+Owner Address
+4.Document Details
+Edit icon
+5.Submit Application button",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Apply for Trafe License
+Click on Next
+Click on Next
+Select Yes/No
+Select on Pucca/Kutcha
+Click on Next
+Select Date
+Click on Next
+Click on Next
+Select Yes 
+Click on Next
+Select Yes
+Select ""I know my Property ID""/""I want to search using Door Number""
+Click on Search button
+Click on Link Property to Application
+Click on Next 
+Click on Next
+Click on Submit Application","summary screen has following details displayed
+1.Trade Details
+Edit icon
+Trade Name
+Structure Type
+Structure Sub-type
+Trade Commensement Date
+Trade Category
+Trade Type
+Trade Sub-type
+Trade Accessory
+Accessory Count
+Accessory UOM
+Accessory UOM Value
+View Property
+2. Location details
+Edit Icon
+Property ID
+Owner's Name
+Address
+Status
+View Property
+3. Owner Details
+Edit Icon
+Name
+Gender 
+Guardian
+Owner Address
+4.Document Details
+Edit icon
+5.Submit Application button",,
+BL/48,View Application,"Check from citizen/employee view of application, on clicking on View property link navigates to property Details",Functional,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Search Property link
+Click on Property ID
+Click on View Property link",navigates to property Details page,,
+BL/49,View Property,"Check if Property Details screen has following details displayed
+1. Property Details
+Property ID 
+Owner Name
+Status
+2. Property Location details
+Pincode
+City
+Locality/Mohalla
+House/Door Number
+Building/Colony Name
+3. Property Ownership details
+Ownership Type 
+Owner Mobile Number
+Owner Name
+Guardian Name
+Relationship 
+Special Applicant Category 
+Correspondance Address",UI,,"Open employee portal
+Enter Username
+Enter Password
+Select city
+Click on Continue
+Click on Search Property link
+Click on Property ID
+Click on View Property link","Property Details screen has following details displayed
+1. Property Details
+Property ID 
+Owner Name
+Status
+2. Property Location details
+Pincode
+City
+Locality/Mohalla
+House/Door Number
+Building/Colony Name
+3. Property Ownership details
+Ownership Type 
+Owner Mobile Number
+Owner Name
+Guardian Name
+Relationship 
+Special Applicant Category 
+Correspondance Address",,
+BL/50,Employee Inbox,Employee Inbox,,,,,,
+BL/51,Employee Inbox,Check whether TL card displays on Digit Home page,UI,,,,,
+BL/52,Employee Inbox,Check whether TL card shows counts for total applications,UI,,,,,
+BL/53,Employee Inbox,Check whether TL card shows counts for applications for nearing SLA,UI,,,,,
+BL/54,Employee Inbox,Check whether the proper count is displayed for total applications,Functional,,,,,
+BL/55,Employee Inbox,Check whether the proper count is displayed for total application for nearing SLA,Functional,,,,,
+BL/56,Employee Inbox,Check whether TL card has Inbox(Count),UI,,,,,
+BL/57,Employee Inbox,Check whether TL card has New trade License option,UI,,,,,
+BL/58,Employee Inbox,Check whether TL card has Renew Trade License option,UI,,,,,
+BL/59,Employee Inbox,"Check by clickin on Inbox, it navigates to Inbox page",Functional,,,,,
+BL/60,Employee Inbox,"Check whether these things are displayed on Trade License card:
+1. New trade license application
+2. Renew trade license
+3. Reports
+4. Search application
+5. Dashboard",UI,,,,,
+BL/61,Employee Inbox,Check whether employee is able to search using valid application number,UI,,,,,
+BL/62,Employee Inbox,Check whether employee is able to search using mobile number,UI,,,,,
+BL/63,Employee Inbox,Check whether mobile number is accepting 10 digits,UI,,,,,
+BL/64,Employee Inbox,Check whether +91 is displayed on Mobile Number field,UI,,,,,
+BL/65,Employee Inbox,Check whether result is displayed as per search params by clicking on Search button,UI,,,,,
+BL/66,Employee Inbox,Check whether error message is displayed when clicked on Search button when fields are left empty,UI,,,,,
+BL/67,Employee Inbox,Check whether Clear search is clearing all fields,UI,,,,,
+BL/68,Employee Inbox,Check whether employee is able to search using filters,UI,,,,,
+BL/69,Employee Inbox,Check whether results are displayed as per filters selected,UI,,,,,
+BL/70,Employee Inbox,Check whether Assigned to All radio button can be selected,UI,,,,,
+BL/71,Employee Inbox,Check whether Assigned to Me radio button can be selected,UI,,,,,
+BL/72,Employee Inbox,Check whether Locality drop down has locality listed,Functional,,,,,
+BL/73,Employee Inbox,Check whether employee is able to select Locality,UI,,,,,
+BL/74,Employee Inbox,Check whether status (Payment Due & Created) can be selected,UI,,,,,
+BL/75,Employee Inbox,Check whether clicking on Apply will provide result as per selected Filters,Functional,,,,,
+BL/76,Employee Inbox,"Check the following things are displayed in search results:
+Application Number
+Application Date
+Locality
+Status
+Current Owner
+SLA remaining",UI,,,,,
+BL/77,Employee Inbox,Check whether employee is able to select rows given below the searh results,UI,,,,,
+BL/78,Employee Inbox,Check whether application are displayed according to Rows selected,UI,,,,,
+BL/79,Employee Inbox,Check whether employee is able to change rows by selecting drop-down button,UI,,,,,
+BL/80,Employee Inbox,Check whether next(>) and previous button(<) are displayed and working,UI,,,,,
+BL/81,,Employee Create,,,,,,
+BL/82,Employee Create,"Check by clicking on New Trade License Application, navigates to application create screen",Functional,,,,,
+BL/83,Employee Create,Check whether Financial year has current year selected by default,UI,,,,,
+BL/84,Employee Create,Check whether other year can be selected using drop down in Financial year field,UI,,,,,
+BL/85,Employee Create,Check whether License type is selected Permanent by default,UI,,,,,
+BL/86,Employee Create,Check whether License type field can't be edited,UI,,,,,
+BL/87,Employee Create,Check whether Trade Name field is accepting inputs,Error Handling,,,,,
+BL/88,Employee Create,"Check validation message""Invalid Trade Name"" is displayed on entering digits and special characters in Trade name input",UI,,,,,
+BL/89,Employee Create,Check whether Drop down values are displayed in Structure Type,UI,,,,,
+BL/90,Employee Create,Check whether Drop down values are displayed in Structure Sub Type,UI,,,,,
+BL/91,Employee Create,Check values for structure sub type are displayed as per value selected for Structure sub type,UI,,,,,
+BL/92,Employee Create,"Check whether clicking on calendar icon, it open calender",UI,,,,,
+BL/93,Employee Create,"Check on clicking any date, it should display on input field",UI,,,,,
+BL/94,Employee Create,Check whether error message is displayed for invalid GST number,Error Handling,,,,,
+BL/95,Employee Create,Check whether Operational sq. ft. area is accepting digits,UI,,,,,
+BL/96,Employee Create,Check whether error message is displayed for entering char and sp. char in Operational sq. ft. area,Error Handling,,,,,
+BL/97,Employee Create,Check whether Number of Employees is accepting digits,UI,,,,,
+BL/98,Employee Create,Check whether error message is displayed for entering char and sp. char in Number of Employees,Error Handling,,,,,
+BL/99,Employee Create,Check whether employee is able to select value from Trade Catergory drop down,UI,,,,,
+BL/100,Employee Create,Check whether employee is able to select value from Trade Type drop down,UI,,,,,
+BL/101,Employee Create,Check whether employee is able to select value from Trade Sub type drop down,UI,,,,,
+BL/102,Employee Create,"Check whether ""HP"" is auto-populated for UOM field as per Accessory selected",UI,,,,,
+BL/103,Employee Create,Check whether UOM Value field is accepting inputs,UI,,,,,
+BL/104,Employee Create,"Check if Validation message ""Wrong UOM value"" is displayed for UOM Value field if characters and special charcters is entered",Error Handling,,,,,
+BL/105,Employee Create,"Check whether clicking on 'Add Trade Units' button, displays Trade Units fields",UI,,,,,
+BL/106,Employee Create,Check whether employee is able to select value from Accessories drop down,UI,,,,,
+BL/107,Employee Create,Check whether Accessories values are displayed as per Trade category selected,UI,,,,,
+BL/108,Employee Create,"Check whether ""HP"" is auto-populated for UOM field as per Accessory selected",UI,,,,,
+BL/109,Employee Create,Check whether UOM Value field is accepting inputs,UI,,,,,
+BL/110,Employee Create,"Check if Validation message ""Wrong UOM value"" is displayed for UOM Value field if characters and special charcters is entered",Error Handling,,,,,
+BL/111,Employee Create,Check whether employee is able to select value from Accessories count drop down,UI,,,,,
+BL/112,Employee Create,"Check whether clicking on 'Add Trade Accessories' button, displays Trade Accessories fields",UI,,,,,
+BL/113,Employee Create,Check whether Pincode field is accepting 6 digits,UI,,,,,
+BL/114,Employee Create,"Check whether error message ""Invalid pincode' is displayed on giving characters and sp. char",Error Handling,,,,,
+BL/115,Employee Create,Check whether employee is able to remove the city from the dropdown field,UI,,,,,
+BL/116,Employee Create,Check whether Locality drop-down is displaying localities,UI,,,,,
+BL/117,Employee Create,Check if Street name and Building number is accepting special characters,UI,,,,,
+BL/118,Employee Create,"Check whether ""Street name' dropdown is showing all dropdown values",UI,,,,,
+BL/119,Employee Create,Check whether Drop down values are displayed in Type of Ownership,UI,,,,,
+BL/120,Employee Create,Check whether error message is displayed on entering digits in Owner's Name field,Error Handling,,,,,
+BL/121,Employee Create,Check whether +91 is displayed on Mobile Number field,UI,,,,,
+BL/122,Employee Create,Check whether mobile number is accepting 10 digits,UI,,,,,
+BL/123,Employee Create,"Check whether error message ""Please provide valid mobile number"" is displayed on entering char and sp char in Mobile Number field",Error Handling,,,,,
+BL/124,Employee Create,Check whether error message is displayed on entering digits in Guardian's Name field,Error Handling,,,,,
+BL/125,Employee Create,Check whether Drop down values are displayed in Relationship with Guardian field,UI,,,,,
+BL/126,Employee Create,Check whether Drop down values are displayed in Gender field,UI,,,,,
+BL/127,Employee Create,Check whether error message is displayed for entering Invalid email,Error Handling,,,,,
+BL/128,Employee Create,Check whether Choose file button is displayed for Documents Required field,,,,,,
+BL/129,Employee Create,"Check if employee clicks on submit application button without providing inputs for mandatory fields ,then proper error message
+should be displayed",Error Handling,,,,,
+BL/130,Employee Create,"Check by clicking on submit button, the application is submitted and a unique application number is generated",Functional,,,,,
+BL/131,Employee Create,Check if the status is Application Created successfully,UI,,,,,
+BL/132,Employee Create,Check whether text: 'The Notification along with the application number is sent to your registered mobile number.You can make payment later using Track application Link from Home page once you receive the messeage you make payment in your mobile phone.' is displayed on success screen,UI,,,,,
+BL/133,Employee Create,Check whether Print application button is displayed and working,Functional,,,,,
+BL/134,Employee Create,"Check by clicking on ""Go Back to Home page"" user is navigated back to the home page of mseva",Functional,,,,,
+BL/135,,Search Application,,,,,,
+BL/136,Employee Inbox,"Check whether clicking on Search Application from Inbox page, it navigates to Search Application page",Functional,,,,,
+BL/137,Employee Inbox,"Check whether following things are displayed on Search Application screen:
+Application Number
+License Type
+From date
+To date
+Trade License Number
+Application Status
+Trade Name
+Search button
+Clear Search",UI,,,,,
+BL/138,Employee Inbox,Check whether employee is able to search using valid application number,UI,,,,,
+BL/139,Employee Inbox,Check whether employee is able to select License type from drop down,UI,,,,,
+BL/140,Employee Inbox,Check whether employee is able to selelct From date and To date,UI,,,,,
+BL/141,Employee Inbox,Check whether employee is able to enter valid Trade license Number,UI,,,,,
+BL/142,Employee Inbox,Check whether employee is able to select Application Status from drop down,UI,,,,,
+BL/143,Employee Inbox,Check whether employee is able to serach using Trdae name,UI,,,,,
+BL/144,Employee Inbox,Check whether error message is displayed for invalid input for all fields,Error Handling,,,,,
+BL/145,Employee Inbox,Check whether error message is displayed when searched on empty fileds,Error Handling,,,,,
+BL/146,Employee Inbox,Check whether result is displayed as per search params by clicking on Search button,UI,,,,,
+BL/147,Employee Inbox,Check whether Clear search is clearing all fields,UI,,,,,
+BL/148,Employee Inbox,"Check whether search results are displayed as follow:
+Application Number
+Application Date
+License Number
+License Tpye
+Trade Name
+Trade Owner Name
+Status",UI,,,,,
+BL/149,Employee Inbox,Check whther Application Number is in Hyperlink text format,UI,,,,,
+BL/150,Employee Inbox,Check whther License Number is in Hyperlink text format,UI,,,,,
+BL/151,Employee Inbox,Check whether clickin on Application number navigates to Application Details page,UI,,,,,
+BL/152,Employee Inbox,Check whether Take action buttonis available for application,UI,,,,,
+BL/153,Employee Inbox,"Check whether Take action button has the following:
+Edit Application
+Proceed to Payment",UI,,,,,
+BL/154,Employee Inbox,Check whether both the buttons are clickable,Functional,,,,,
+BL/155,Employee Inbox,Check whether application which is aproved has option for Renew Trade License,UI,,,,,
+BL/156,,Check whether trade details screen is dispalyed when clicked on application number if application is on approved status,Functional,,,,,
+BL/157,,Payment from Employee,,,,,,
+BL/158,Employee Payment,Check whether clicking onProceed to Payment navigates to Collect Payment screen,Functional,,,,,
+BL/159,Employee Payment,Check whether Trade License Number is dispayed,UI,,,,,
+BL/160,Employee Payment,"Check whether on Payment Details: Proper amount is displayed for License Fee, Tax Heads and total due amount",UI,,,,,
+BL/161,Employee Payment,Check whether in Payment Amount: user is able to select the radio button,UI,,,,,
+BL/162,Employee Payment,Check whether Amount field is disabled if Full Amount radio button is selected,UI,,,,,
+BL/163,Employee Payment,Check whether Amount field is enabled if Custom Amount radio button is selected,UI,,,,,
+BL/164,Employee Payment,Check whether error message is displayed if user tries to proceed with amount less than 100,Error Handling,,,,,
+BL/165,Employee Payment,Check if Total dew amount is less than 100 than disable Custom Amount radio button,UI,,,,,
+BL/166,Employee Payment,Check whether Paid By filed has dropdown value and can be selected,UI,,,,,
+BL/167,Employee Payment,Check whether error message is displayed if digits or sp. char is entered in Payer name field,Error Handling,,,,,
+BL/168,Employee Payment,Check whether +91 is displayed on Mobile Number field,UI,,,,,
+BL/169,Employee Payment,Check whether mobile number is accepting 10 digits,UI,,,,,
+BL/170,Employee Payment,Check whether in Payment mode: Radio button can be selected,UI,,,,,
+BL/171,Employee Payment,Check whether on selecting Debit/Credit Card radio button: Transaction number and Re-Enter transaction number field is displayed,UI,,,,,
+BL/172,Employee Payment,Check whether error messag is displayed when entered less than or more than 6 digits in Transaction number field,Error Handling,,,,,
+BL/173,Employee Payment,Check whether employee is able to enter valid Manual Receipt Number,UI,,,,,
+BL/174,Employee Payment,Check whether user is able to select Manual Receipt Date,UI,,,,,
+BL/175,Employee Payment,"Check after clicking on proceed to Colection button, unique receipt number is generated",Functional,,,,,
+BL/176,Employee Payment,Check whether success screen title reads Payment Collected,UI,,,,,
+BL/177,Employee Payment,Check whether text : The notification along with your application number is sent to your applicant’s mobile number. Applicant can track the application status using mobile or web app. is displayed,UI,,,,,
+BL/178,Employee Payment,Check whether Reciept and Renewal certificate button is displayed,UI,,,,,
+BL/179,Employee Payment,Check whether Reciept and Renewal certificate can be downloaded,Functional,,,,,
+BL/180,Employee Payment,"Check by clicking on ""Go Back to Home page"" user is navigated back to the home page of mseva",Functional,,,,,
+BL/181,,Employee flow - Renew Trade License,,,,,,
+BL/182,Employee renewal,"Check whether on clicking 'Renew Trade License', it navigates to Search Trade screen",Functional,,,,,
+BL/183,Employee renewal,"Check the following things are displayed on Search Trade screen:
+Trade License Number
+Trade Owner’s Number
+License Issued From
+License Issued to
+Trade Name
+Search button
+Clear search button",UI,,,,,
+BL/184,Employee renewal,Check whether Trade License Number field is accepting valid license number,UI,,,,,
+BL/185,Employee renewal,Check whether Trade Owner’s Number field is accepting 10 digits,UI,,,,,
+BL/186,Employee renewal,Check whether error message is displayed on giving char and sp. char on Trade Owner’s Number field,Error Handling,,,,,
+BL/187,Employee renewal,"Check whether dates can be selected from ""License Issued From"" field",UI,,,,,
+BL/188,Employee renewal,"Check whether dates can be selected from ""License Issued To"" field",UI,,,,,
+BL/189,Employee renewal,Check whether Trade Name field is accepting only char and sp. char,UI,,,,,
+BL/190,Employee renewal,Check whether error message is displayed on giving digits on Trade Name field,Error Handling,,,,,
+BL/191,Employee renewal,"Check whether on clicking search button, results is displayed according to param given",Functional,,,,,
+BL/192,Employee renewal,Check whether clear search is clearing all fields,UI,,,,,
+BL/193,Employee renewal,"Check whether these column are displayed in result
+License Number
+Trade Name
+Trade issued on
+Valid Till
+Locality
+Status",UI,,,,,
+BL/194,Employee renewal,Check whether License Number is given in hyperlink text format,UI,,,,,
+BL/195,Employee renewal,Check whteher License number is clickable,Functional,,,,,
+BL/196,Employee renewal,"Check on clicking License number, it navigates to Trdae details page",Functional,,,,,
+BL/197,Employee renewal,Check whether all details ar displayed which was entered while creating application,UI,,,,,
+BL/198,Employee renewal,Check whether Trade Units and Accessories are given in seperate box,UI,,,,,
+BL/199,Employee renewal,Check whether 'Renew Trade License' option is available in Take Action button,UI,,,,,
+BL/200,Employee renewal,"Check whether Clicking on Renew Trade License button, it navigates to 'Renew Trade License Application' page",Functional,,,,,
+BL/201,Employee renewal,"Check whether Infor Text
+""If there are changes in the trade details, Please make changes in the respective section.
+If there are no changes, please go ahead and submit the application.""
+is displayed on summary page",UI,,,,,
+BL/202,Employee renewal,Check whether all fields are editable except License Type and Financial Year,Functional,,,,,
+BL/203,Employee renewal,Check whether License Type and Financial Year fields are by default disabled,UI,,,,,
+BL/204,Employee renewal,Check whether all the details are pre-populated while renewal,UI,,,,,
+BL/205,Employee renewal,"Check by clicking on submit button, the application is submitted and a unique application number is generated",Functional,,,,,
+BL/206,Employee renewal,Check if the status is Renewal Application Submitted Successfully,UI,,,,,
+BL/207,Employee renewal,Check whether text: 'The Notification along with the application number is sent to your registered mobile number.You can make payment later using Track application Link from Home page once you receive the messeage you make payment in your mobile phone.' is displayed on success screen,UI,,,,,
+BL/208,Employee renewal,Check whether Print Application button id displayed and clickable,Functional,,,,,
+BL/209,Employee renewal,Check whether Collect Payment button is displayed after successful renewal,UI,,,,,
+BL/210,Employee renewal,Check whether clicking on Collect Payment button navigates to Collect payment screen,Functional,,,,,
+BL/211,Employee workflow,Workflow Actions,Functional,,,,,
+BL/212,Employee workflow,Check whether 'Created' status is displayed when Counter employee creates new applicaton,UI,,,,,
+BL/213,Employee workflow,"Check whether after submitting application from Citizen and Counter employee, application goes to Document Verifer",Functional,,,,,
+BL/214,Employee workflow,Chek whether Pending for Document Verifier status is displayed on DV login,UI,,,,,
+BL/215,Employee workflow,"Check whether Doc verifier has these actions:
+Verify and Forward
+Reject",UI,,,,,
+BL/216,Employee workflow,"Check if DV rejects the applications, status should change to REJECTED",Functional,,,,,
+BL/217,Employee workflow,Check if appliation is in Rejected status then citizen and employee can't take any action,Functional,,,,,
+BL/218,Employee workflow,Check whether application goes to FI login if DV selects 'Verify and Forward' option,Functional,,,,,
+BL/219,Employee workflow,Chek whether Pending for Field Inspection status is displayed after selecting Verify and Forward action,UI,,,,,
+BL/220,Employee workflow,"Check whether Field Inspetor has these actions:
+Verify and Forward
+Send back to citizen
+Send back
+Reject",UI,,,,,
+BL/221,Employee workflow,"Check whether applications goes to Doc Ver, if FI selects 'Send Back' option",Functional,,,,,
+BL/222,Employee workflow,"Check whether applications goes to Citizen, if FI selects 'Send Back to Citizen' option",Functional,,,,,
+BL/223,Employee workflow,"Check whether application goes to Approver, if FI selects 'Verify and Forward' option",Functional,,,,,
+BL/224,Employee workflow,Chek whether Pending for Approval status is displayed after selecting Verify and Forward action,UI,,,,,
+BL/225,Employee workflow,Check whether application which was modified by citizen is displayed on FI login,UI,,,,,
+BL/226,Employee workflow,Check whether FI can take action on application modified by Citizen,Functional,,,,,
+BL/227,Employee workflow,"Check whether Approverhas these actions:
+Approve
+Reject",UI,,,,,
+BL/228,Employee workflow,Chek whether Approved status is displayed after selecting 'Approve' action,UI,,,,,
+BL/229,Employee workflow,Check whether Pay option is displayed on Counter Employee login after approval,UI,,,,,
+BL/230,Employee workflow,Check whether Counter employee has option to Renew the application,Functional,,,,,
+BL/231,Citizen Create,,,,,,,
+BL/232,Citizen Create,Login as a citizen by using a mobile number and an OTP,Functional,,,,,
+BL/233,Citizen Create,Check logging in from both mobile and web app,Functional,,,,,
+BL/234,Citizen Create,Check whether the TL card shows on Homepage,UI,,,,,
+BL/235,Citizen Create,"Check if the Trade License card has the following:
+1. Apply for Trade License
+2. Renew Trade license
+3. My Applications",UI,,,,,
+BL/236,Citizen Create,"Check if following are clickable:
+1. Apply for Trade License
+2. Renew Trade license
+3. My Applications",UI,,,,,
+BL/237,Citizen Create,"Check clicking on Apply for Trade Licnese, navigates to ""Trade License registration"" screen",Functional,,,,,
+BL/238,Citizen Create,"Check if ""Trade License registration"" screen has following things:
+1. Text: It would take 2 minutes to complete this application and the following documents are required in .pdf or .jpg format to complete the application.
+2. Text: Owner Proofs(Owner ID card, Ownership documents, Owner Photo, Old License)
+3. Next button
+4. Info Text: Maximum file size allowed is 5MB
+5. Back link",UI,,,,,
+BL/239,Citizen Create,"Clicking on Next button navigates to ""Enter Your Trade Name"" screen",Functional,,,,,
+BL/240,Citizen Create,Check whether Trade Name field is accepting inputs,UI,,,,,
+BL/241,Citizen Create,"Check validation message""Invalid Trade Name"" is displayed on entering digits and special characters in Trade name input",Error Handling,,,,,
+BL/242,Citizen Create,Check whether Info text(Your license will be issued for the current year 2021-2022) is displayed,UI,,,,,
+BL/243,Citizen Create,"Clicking on Next button navigates to ""Structure type"" screen",Functional,,,,,
+BL/244,Citizen Create,"Check whether ""Confirm Structure Type"" text is displayed",UI,,,,,
+BL/245,Citizen Create,"Check whether ""Do you run your trade on a immovable structure?"" is displayed",UI,,,,,
+BL/246,Citizen Create,Check whether Next button is disabled if no radio button is selected,UI,,,,,
+BL/247,Citizen Create,"Check if once the raido button is selected, it cannot be deselected",UI,,,,,
+BL/248,Citizen Create,"Check on clicking on ""Yes"" navigates to Building type screen",Functional,,,,,
+BL/249,Citizen Create,"Check on clicking on ""No"" navigates to Vehicle type screen",Functional,,,,,
+BL/250,Citizen Create,"Check on Vehicle type screen ""Choose whether the vehicle is motor driven or pulled by hand"" text is displayed",UI,,,,,
+BL/251,Citizen Create,Check whether user is able to select or deselect radio buttons,UI,,,,,
+BL/252,Citizen Create,Check whether Next button is disabled if no radio button is selected,UI,,,,,
+BL/253,Citizen Create,"Check on Building type screen ""Choose the type of building in which the trade is run. Is it Pucca or Kuccha building?"" text is displayed",UI,,,,,
+BL/254,Citizen Create,"Check whether Info text(Pucca refers to dwellings that are meant to solid and permanent, built with materials such as stone, Brick, Cemet, Concrete etc. Katcha refers to dwellings with walls / roofs built with materials such as burnt bricks, bamboo, Mud, Grass, Loosely packed stones...etc.) is displayed",UI,,,,,
+BL/255,Citizen Create,Check whether user is able to select radio buttons,UI,,,,,
+BL/256,Citizen Create,"Check whether ""HP"" is auto-populated for Uint of Measure field as per Accessory selected",UI,,,,,
+BL/257,Citizen Create,Check whether UOM Value field is accepting inputs,Functional,,,,,
+BL/258,Citizen Create,"Check if Validation message ""Wrong UOM value"" is displayed for UOM Value field if characters and special charcters is entered",UI,,,,,
+BL/259,Citizen Create,"Check whether clicking on calendar icon, it open calender",UI,,,,,
+BL/260,Citizen Create,"Check on clicking any date, it should display on input field",UI,,,,,
+BL/261,Citizen Create,"check clicking on Next button navigates to ""Trade Units"" screen",Functional,,,,,
+BL/262,Citizen Create,Check wheher Trade Category : radio button can be selected,UI,,,,,
+BL/263,Citizen Create,"Check as per trade category value selected, the drop down displays Trade Type values",UI,,,,,
+BL/264,Citizen Create,"Check as per Trade type is selected, the drop down displays Trade Sub-type values",UI,,,,,
+BL/265,Citizen Create,"Check whether ""HP"" is auto-populated for Uint of Measure field as per Trade Type and Trade sub-type selected",UI,,,,,
+BL/266,Citizen Create,Check whether UOM Value field is accepting inputs,UI,,,,,
+BL/267,Citizen Create,Check if Validation message is displayed for UOM Value field if characters and special charcters is entered,Error Handling,,,,,
+BL/268,Citizen Create,"Check whether clicking on Add More Trade Units button, displays Trade Units fields",UI,,,,,
+BL/269,Citizen Create,"Clicking on Next button navigates to ""Do you have any Accessories?"" screen",Functional,,,,,
+BL/270,Citizen Create,Check whether user is able to select radio buttons,UI,,,,,
+BL/271,Citizen Create,Check whether Next button is disabled if no radio button is selected,UI,,,,,
+BL/272,Citizen Create,"Check whether selecting on ""Yes"" raio button navigates to ""Trade Accessories"" screen",Functional,,,,,
+BL/273,Citizen Create,"Check whether ""Accessory"" drop down displays value and can be selected",UI,,,,,
+BL/274,Citizen Create,Check whether Accessory count is accepting inputs,UI,,,,,
+BL/275,Citizen Create,Check if Validation message is displayed for Accessory Counts field if characters and special charcters is entered,Error Handling,,,,,
+BL/276,Citizen Create,"Check whether ""HP"" is auto-populated for Uint of Measure field as per Accessory selected",UI,,,,,
+BL/277,Citizen Create,Check whether UOM Value field is accepting inputs,UI,,,,,
+BL/278,Citizen Create,"Check if Validation message ""Wrong UOM value"" is displayed for UOM Value field if characters and special charcters is entered",Error Handling,,,,,
+BL/279,Citizen Create,"Check whether clicking on Add More Trade Accessories button, displays Trade Accessories fields",UI,,,,,
+BL/280,Citizen Create,"check clicking on Next button , navigates to ""Pin Trade Location"" screen",Functional,,,,,
+BL/281,Citizen Create,Check whether Map is displayed and user able to select location,UI,,,,,
+BL/282,Citizen Create,Check Next button is disabled if location is not entered,UI,,,,,
+BL/283,Citizen Create,Check whether next button is enabled if location is selected,UI,,,,,
+BL/284,Citizen Create,"Check whether on clicking Next button, ""Do you know the pincode? screen is displayed",Functional,,,,,
+BL/285,Citizen Create,"Check whether on clicking Skip and continue button, ""Do you know the pincode?"" screen is displayed",Functional,,,,,
+BL/286,Citizen Create,Check whether Pincode field is accepting 6 digits,UI,,,,,
+BL/287,Citizen Create,"Check whether error message ""Invalid pincode' is displayed on giving characters and sp. char",Error Handling,,,,,
+BL/288,Citizen Create,Check Next button is disabled if Pincode is not entered,UI,,,,,
+BL/289,Citizen Create,"Check whether on clicking Skip and continue button, ""Provide Trade Address"" screen is displayed",Functional,,,,,
+BL/290,Citizen Create,Check on City* drop down: user can select any city,UI,,,,,
+BL/291,Citizen Create,"Check whether after selecting City*, Locality/Moholla field is displayed",UI,,,,,
+BL/292,Citizen Create,Check whether drop-down values are displayed as per selected Locality,Functional,,,,,
+BL/293,Citizen Create,Check if Next button is enabled if Locality is not selected,UI,,,,,
+BL/294,Citizen Create,"Check clicking on Next button navigates to ""Provide Trade Address"" screen",Functional,,,,,
+BL/295,Citizen Create,Check if Street name and Building number is accepting special characters,UI,,,,,
+BL/296,Citizen Create,"Check on clicking Next button navigates to ""Provide Landmark"" screen",Functional,,,,,
+BL/297,Citizen Create,Check if Landmark field is accepting special characters,UI,,,,,
+BL/298,Citizen Create,"Check whether Skip and Continue button navigates to ""Provide Ownership details"" screen",Functional,,,,,
+BL/299,Citizen Create,Check whether Next button is disabled if no radio button is selected,UI,,,,,
+BL/300,Citizen Create,Check whether clicking on Single owner navigates to Owner details page,Functional,,,,,
+BL/301,Citizen Create,"Check whether error message ""Invalid Name"" is displayed on entering digitsand sp char in Name field",Error Handling,,,,,
+BL/302,Citizen Create,Check whether the Gender: radio button can be selected,UI,,,,,
+BL/303,Citizen Create,"Check whether error message ""Please provide valid mobile number"" is displayed on entering char and sp char in Mobile Number field",Error Handling,,,,,
+BL/304,Citizen Create,Check whether Next button is disabled if any mandatory field is left empty,UI,,,,,
+BL/305,Citizen Create,"Check whether clicking on Multiple Owners navigate to Owner details page with ""Add Owner"" button",Functional,,,,,
+BL/306,Citizen Create,Check whether clicking on Add Owner button opens another Owner detail blcok,UI,,,,,
+BL/307,Citizen Create,Check whether Primary Owner checkbox can be selected,UI,,,,,
+BL/308,Citizen Create,"Check if Multiple owners are there, user can only select one primary owner checkbox",UI,,,,,
+BL/309,Citizen Create,"Check clicking on Next navigates to ""Owner's Address"" screen",Functional,,,,,
+BL/310,Citizen Create,Check whether user is able to enter address,UI,,,,,
+BL/311,Citizen Create,Check whether the Same as Trade's address : checkbox can be selected and deselected,UI,,,,,
+BL/312,Citizen Create,Check whether next button is disabled is no Address is entered,UI,,,,,
+BL/313,Citizen Create,Check if there are multiple owners than on Owners address screen: Info text (Address of the Primary owner) is displayed,UI,,,,,
+BL/314,Citizen Create,"Check clicking on Next button navigates to ""Proof of Identity"" screen",Functional,,,,,
+BL/315,Citizen Create,Check whether Document drop down values can be selected,Functional,,,,,
+BL/316,Citizen Create,"Check whether clicking on Choose File button, system navigates to file manager",Functional,,,,,
+BL/317,Citizen Create,Check whether Next button is disabled if no ducments are uploaded,UI,,,,,
+BL/318,Citizen Create,"Check whether ""File Type: jpg, PNG or PDF (less than 2 MB)"" text is displayed on document upload screen",UI,,,,,
+BL/319,Citizen Create,"Check clicking on Next button navigates to ""Ownership Document"" screen",Functional,,,,,
+BL/320,Citizen Create,"Check clicking on Next button navigates to ""Owner's Photograph"" screen",Functional,,,,,
+BL/321,Citizen Create,Check whether Choose file button is displayed on Document type box,UI,,,,,
+BL/322,Citizen Create,Check whether clicking on Next button navigate to Check your Answers page,Functional,,,,,
+BL/323,Citizen Create,Check whether all details entered by user is displayed on summary page,UI,,,,,
+BL/324,Citizen Create,Check whether details can be changed using CHANGE button,Functional,,,,,
+BL/325,Citizen Create,Check whether user is able to view document,Functional,,,,,
+BL/326,Citizen Create,"Check by clicking on submit button, the application is submitted and a unique application number is generated",Functional,,,,,
+BL/327,Citizen Create,Check if the status is Application Created successfully,UI,,,,,
+BL/328,Citizen Create,Check whether text: 'The Notification along with the application number is sent to your registered mobile number.You can make payment later using Track application Link from Home page once you receive the messeage you make payment in your mobile phone.' is displayed on success screen,UI,,,,,
+BL/329,Citizen Create,"Check by clicking on ""Go Back to Home page"" user is navigated back to the home page of mseva",Functional,,,,,
+BL/330,,My Applications,,,,,,
+BL/331,My Applications,"Click on ""My Application"" and check if the user is naviagted to the application list page",Functional,,,,,
+BL/332,My Applications,"""Check if following application details are listed:
+1. Application No.
+2. Application Category
+3. Owner Name
+4. Trade Name
+5. Status
+6. SLA days
+7. View Details button
+8. Back Link at the top",UI,,,,,
+BL/333,My Applications,"Check whether application which has ""Pending Payment"" status has ""View Details & Pay"" button",UI,,,,,
+BL/334,My Applications,Check whether application which is in workflow has View Details button,UI,,,,,
+BL/335,My Applications,Click on View Details button and check if the application detials page is opened,Functional,,,,,
+BL/336,My Applications,"Check the following detials are displayed as expected:
+Application details
+Download button
+Application timeline",UI,,,,,
+BL/337,My Applications,Click on download link and check if the application acknowlwdgement is downloaded in the pdf format,Functional,,,,,
+BL/338,My Applications,Click on download link and check if the Payment reciept is downloaded in the pdf format,Functional,,,,,
+BL/339,My Applications,Check if the application timeline displays the workflow status of the application,UI,,,,,
+BL/340,My Applications,Check whether user is able to View douments,Functional,,,,,
+BL/341,,Payment from Citizen,,,,,,
+BL/342,Citizen Pay,"Check whether the ""Make Payment"" button is clickable",Functional,,,,,
+BL/343,Citizen Pay,"Click on ""Make Payment"" button and check if ""Payment"" screen is displayed",Functional,,,,,
+BL/344,Citizen Pay,"check if the payment screen has the following:
+Total Amount Due
+Select Payment Method
+Info
+Pay Button",UI,,,,,
+BL/345,Citizen Pay,"Select payment method, click on pay button. Check if the thrird party payment screen is opened.",Functional,,,,,
+BL/346,Citizen Pay,"Once the payment is done, check if the system navigates back to mseva",Functional,,,,,
+BL/347,Citizen Pay,"Check if the payment complete page has the following:
+Payment Complete message
+Reference No.
+Application No.
+Application Date
+Transaction ID
+Amount Paid
+Download Receipt button
+Go Back to homepage",UI,,,,,
+BL/348,Citizen Pay,Check whether receipt can be downloaded after making payment,Functional,,,,,
+BL/349,,Check whether TL certificate can be downloaded after making payment,,,,,,
+BL/350,Citizen Pay,"Check if payment is interrupted in between, error message(Try after 30 mins ) is displayed",Error Handling,,,,,
+BL/351,Citizen Renewal,Citizen flow - Renew Trade License,,,,,,
+BL/352,Citizen Renewal,"Check if the Trade License card has the following:
+1. Apply for Trade License
+2. Renew Trade license
+3. My Applications",Functional,,,,,
+BL/353,Citizen Renewal,"Check clicking on Renew Trade License,it navigate to ""Renewal of Trade License"" screen",Functional,,,,,
+BL/354,Citizen Renewal,"Check whether ""For our records, the list of Trade Licenses which are tagged to the logged in mobile number and pending for renewal is given below. Select the trade license which should be renewed. "" is displayed",UI,,,,,
+BL/355,Citizen Renewal,Check whether list of Trade License application is displayed,UI,,,,,
+BL/356,Citizen Renewal,"Check whether following things are displayed:
+1. Trade License (1.2....n)
+2. Trade Name
+3. Owner Name
+4. License Status (Active and Valid upto dd/mm/yyyy, Expired and expired on dd/mm/yyyy. Penalty
+of XX will be charged for late renewal.)
+5. Renew Button
+6. Text: Not able to find Trade license
+7. Link: Click here to Search Trade License",UI,,,,,
+BL/357,Citizen Renewal,"Check by clicking link 'Click here to Search Trade License', it navigates to 'Search Trade License' screen",Functional,,,,,
+BL/358,Citizen Renewal,"Check whether search trade License screen has following:
+Text: Provide atleast one search parameter
+Owner Mobile Number
+Trade License Number
+Search buttton",Functional,,,,,
+BL/359,Citizen Renewal,Check whether mobile number is accepting 10 digits,UI,,,,,
+BL/360,Citizen Renewal,Check whether error message is displayed on entering char and sp char,UI,,,,,
+BL/361,Citizen Renewal,Check whether Trade License number is accepting valid format,UI,,,,,
+BL/362,Citizen Renewal,Check whether error message is displayed on entering invalid Trade license number,UI,,,,,
+BL/363,Citizen Renewal,Check whether all applications are listed which is registered under particular mobile number,UI,,,,,
+BL/364,Citizen Renewal,Check whether results are displayed by entering Trade license number,UI,,,,,
+BL/365,Citizen Renewal,Check whether application count is displayed next to Search results,UI,,,,,
+BL/366,Citizen Renewal,Check by clicking on renew button if page navigate to RenewTrade License summary/Application details page,Functional,,,,,
+BL/367,Citizen Renewal,"Check whether Infor Text
+""If there are changes in the trade details, Please make changes in the respective section.
+If there are no changes, please go ahead and submit the application.""
+is displayed on summary page",UI,,,,,
+BL/368,Citizen Renewal,Check whether all details are displayed with Change and submit Application button,Functional,,,,,
+BL/369,Citizen Renewal,"Check whether on clicking Change button, screen navigate to respective section",Functional,,,,,
+BL/370,Citizen Renewal,Check whether details are pre-populated while renewal flow,UI,,,,,
+BL/371,Citizen Renewal,"Check whether these information can be edit while Renewal:
+Structure sub type
+Trade details ( Category / Trade type / Trade subtype / UOM /UOM value )
+Owner info - except whether single owner or multi owner",UI,,,,,
+BL/372,Citizen Renewal,"Check by clicking on submit button, the application is submitted and a unique application number is generated",Functional,,,,,
+BL/373,Citizen Renewal,Check if the status is Renewal Application Submitted Successfully,UI,,,,,
+BL/374,Citizen Renewal,Check whether text: 'The Notification along with the application number is sent to your registered mobile number.You can make payment later using Track application Link from Home page once you receive the messeage you make payment in your mobile phone.' is displayed on success screen,UI,,,,,
+BL/375,Citizen Renewal,"Check by clicking on ""Go Back to Home page"" user is navigated back to the home page of mseva",Functional,,,,,
+BL/376,Renewal Validation/Cancelled/Expired,Check whether application can't be renewed if active renewal application is there for same license number,Functional,,,User should not be able to renew application for which one renewal application already is in Progress,,
+BL/377,Renewal Validation/Cancelled/Expired,Check whether application can be renewed if no active renewal application is there for the license number,Functional,,,User should be able to renew license when no active renewal applications are there,,
+BL/378,Renewal Validation/Cancelled/Expired,Check whether user is able to renew application again if previous renew application was Rejected by Employee,Functional,,,User should be able to create new Renewal application if old Renewal application is in Rejected status,,
+BL/379,Renewal Validation/Cancelled/Expired,Check whether user is not able to renew application if previous application was Cancelled by Employee,Functional,,,User should not be able to create new applcation once old one is Cancelled,,
+BL/380,Renewal Validation/Cancelled/Expired,"Check whether validation message is displayed if user tried to Renew application which is in Cancelled status.
+Message: The given license number is in cancelled status . Renewal application cannot be processed.",Error Handling,,,Validation message should display when user tries to create new application when old one is in Cancelled status,,
+BL/381,Renewal Validation/Cancelled/Expired,Check whether user is not able to renew applications for same financial year multiple times,Functional,,,User should not be able to create renewal application multiple times for same financial year,,
+BL/382,Renewal Validation/Cancelled/Expired,"Check whether validation message is displayed if user tries to renew application for same license number which have active renewal applications
+Message: There is an active renewal application XXX created already for the given license number.You cannot proceed",Error Handling,,,Validation message should display when user tries to renew license when already one Renewal application is in progress,,
+BL/383,Renewal Validation/Cancelled/Expired,Check whether Approver is able to Cancel the Trade License application,Functional,,,Approver should be able to cancel the Trade license application,,
+BL/384,Renewal Validation/Cancelled/Expired,Check whether Approver is able to manually Expire the Trade License application post selecting Expire button,Functional,,,"Approver should be able to manually Expire the Trade license Application:
+1. Before Expiry date
+2. After Expiry date",,
+BL/385,Renewal Validation/Cancelled/Expired,"Check if application is expired manually by employee before expiry date, that forbids the Citizen/CE to renew application",Functional,,,"User should not able to create new Renewal application, once license is expired manually by employee before Expiry date",,
+BL/386,Renewal Validation/Cancelled/Expired,"Check if validation message is displayed, when user tries to renew application which expired manually before expiry date
+Message: This License cannot be renewed.Please contact ULB official for details.",Error Handling,,,Validation message should display when user tries to renew when license was expired manually by employee before Expiry date,,
+BL/387,Renewal Validation/Cancelled/Expired,"Check if application is expired manually by employee post expiry date, that allow Citizen/CE to renew application",Functional,,,When license is expired manually post expiry date then user should be able to Renew the application,,
+BL/388,Renewal Validation/Cancelled/Expired,Check if application is expired by system after expiry date then user is able to renew application,Functional,,,User should be able to renew application after expiry date,,
+BL/389,Renewal Validation/Cancelled/Expired,Check on Employee login if application displayed on Search Trade license screen are pending for renewal,UI,,,Applications which are pending for renewal should display on Search Trade license screen,,
+BL/390,Renewal Validation/Cancelled/Expired,Check on Citizen login if application displayed on Renew trade license screen are pending for renewal,UI,,,Applications which are pending for renewal should display on Renew Trade license screen,,
+BL/391,Renewal Validation/Cancelled/Expired,Check if Employee is not allowed to directly Cancel/Expire the Old Trade License reference application when the renewal application is not in Cancelled/Expired status,Functional,,,Employee should not be able to directly cancel the old Trade license reference application when already renewal application is there for same license,,
+BL/392,Renewal Validation/Cancelled/Expired,"Check whether Employee is able to Cancel/Expire Old trade license application, when all renewal application are in Cancelled/Expired status",Functional,,,Employee should able to cancel the old license application once all the renewal application for same license are Cancelled/Expired status,,
+BL/393,Renewal Validation/Cancelled/Expired,"Check whether validation is thrown if Employee tries to cancel application which has Renewal applications
+Message: There is a renewal application number XXX available for the selected license . You cannot proceed.",Error Handling,,,Validation message should display when employee tries to cancel trade license which has Renewal applications,,
+BL/394,Citizen - Owner Type,"Check whether these options are displayed for Ownership type:
+1. Individual / Single owner
+2. Joint / Multiple owners
+3. Institutional - Private
+4. Institutional - Government",UI,,"1. Login as citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Check all the options",Mentioned options should display on Ownership type page,,
+BL/395,Citizen - Owner Type,Check whether Guardian and relationship fields are displayed in Owner details page only if Single/Multiple owner type is selected,UI,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Single/Multiple owner on Owner type section",Guradian and relationship fields should only displayed in Owner details page when Single/Multiple owner type is selected,,
+BL/396,Citizen - Owner Type,Check whether user is able to enter input is Guradian field,Functional,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Single/Multiple owner on Owner type section
+5. Enter any name in Guardian's name field",User should be able enter input in Guardian field,,
+BL/397,Citizen - Owner Type,Check whether user is able to select any radio buton for relationship field,Functional,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Single/Multiple owner on Owner type section
+5. Select any relationship from given drop down",User should be able to select any one radio button,,
+BL/398,Citizen - Owner Type,"Check whether mentioned details are displayed when Institutional Private/ Government owner type is selected
+Fields below Owner Details:
+1. Institution Name (Mandatory field)
+2. Type of Institution (Mandatory field)
+Fields below Authorized person’s Details:
+1. Name
+2. Designation
+3. Mobile Number (Mandatory field)
+4. Telephone Number
+5. Email ID",UI,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Institutional Private/ Government owner on Owner type section
+5. Enter Authorized Person’s Details section with valid data",Mentioned options should display on Ownership type page,,
+BL/399,Citizen - Owner Type,Check whether '+91' text is displayed for mobile number field inside with input box,UI,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Institutional Private/ Government owner on Owner type section
+5. On Authorized Person’s Details section, check mobile number field",#ERROR!,,
+BL/400,Citizen - Owner Type,Check whether validation is displayed when numeric or sp char is entered in name field,Validation,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Institutional Private/ Government owner on Owner type section
+5. Try entering number or sp char in name field",Validation message should display when numeric or sp char is entered in name field,,
+BL/401,Citizen - Owner Type,Check whether validation is displayed when character or sp char is entered in Mobile number field,Validation,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Institutional Private/ Government owner on Owner type section
+5. Try entering character or sp char in mobile number field",Validation message should display when character or sp char is entered in mobile number field,,
+BL/402,Citizen - Owner Type,Check whether error message is displayed if more than 10 digit is entered in mobile number field,Validation,,"1. Login as Citizen
+2. Go to TL card and click apply for new TL
+3. Fill all neccessary detail and navigate to Owner Type page
+4. Select Institutional Private/ Government owner on Owner type section
+5. Try entering more than 10 digits on mobile number field",Error message should display when more than 10 digit is entered in mobile number field,,
+BL/403,,,,,,,,
+BL/404,Employee - Owner Type,"Check whether these options are displayed for Ownership type dropdown:
+1. Individual / Single owner
+2. Joint / Multiple owners
+3. Institutional - Private
+4. Institutional - Government",UI,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Fill the form
+4. Check Owner type section",Mentioned options should display on Ownership type page,,
+BL/405,Employee - Owner Type,Check whether Guardian's name and relationship with guardian fields are displayed in Owner details page only if Single/Multiple owner type is selected,UI,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Single/Multiple owner on Owner typr section",Guradian and relationship fields should only displayed in Owner details page when Single/Multiple owner type is selected,,
+BL/406,Employee - Owner Type,Check whether user is able to enter input is Guradian's name field,Functional,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Single/Multiple owner on Owner typr section
+4. Enter any name in Guardian's name field",User should be able enter input in Guardian field,,
+BL/407,Employee - Owner Type,Check whether user is able to select input from relationship with guardian dropdown,Functional,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Single/Multiple owner on Owner typr section
+4. Select any relationship from given drop down",User should be able to select any value from dropdown,,
+BL/408,Employee - Owner Type,"Check whether mentioned details are displayed when Institutional Private/ Government owner type is selected
+Fields below Owner Details:
+1. Institution Name (Mandatory field)
+2. Type of Institution (Mandatory field)
+Fields below Authorized person’s Details:
+1. Name
+2. Designation
+3. Mobile Number (Mandatory field)
+4. Telephone Number
+5. Email ID",UI,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Institutional Private/ Government owner on Owner type section
+4. Enter Authorized Person’s Details section with valid data",Mentioned options should display on Ownership type page,,
+BL/409,Employee - Owner Type,Check whether '+91' text is displayed for mobile number field inside with input box,UI,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Institutional Private/ Government owner on Owner type section
+4. On Authorized Person’s Details section, check mobile number field",#ERROR!,,
+BL/410,Employee - Owner Type,Check whether validation is displayed when numeric or sp char is entered in name field,Validation,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Institutional Private/ Government owner on Owner type section
+4. Try entering number or sp char in name field",Validation message should display when numeric or sp char is entered in name field,,
+BL/411,Employee - Owner Type,Check whether validation is displayed when character or sp char is entered in Mobile number field,Validation,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Institutional Private/ Government owner on Owner type section
+4. Try entering character or sp char in mobile number field",Validation message should display when character or sp char is entered in mobile number field,,
+BL/412,Employee - Owner Type,Check whether error message is displayed if more than 10 digit is entered in mobile number field,Validation,,"1. Login as Counter Employee
+2. Go to TL new application screen
+3. Select Institutional Private/ Government owner on Owner type section
+4. Try entering more than 10 digits on mobile number field",Error message should display when more than 10 digit is entered in mobile number field,,
+BL/413,Dashboard,Check if the new instance at the national level with a DDR and ULB filter.,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard",New instance at the national level with a DDR and ULB filter.,,
+BL/414,,"Check if the new instance at the national level with a State and ULB filter has: 
+Sum of data of all ULBs within a state = 1 state’s data",UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard","New instance at the national level with a State and ULB filter should consist: 
+Sum of data of all ULBs within a state = 1 state’s data",,
+BL/415,,"Check if the new instance at the national level with a State and ULB filter has: 
+Sum of data of all states = National level data",UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard","New instance at the national level with a State and ULB filter should consist: 
+Sum of data of all states = National level data",,
+BL/416,,Check if national instance is not interfered with the state level instance that will be built separately. ,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard",National instance should not interfere with the state level instance that will be built separately. ,,
+BL/417,,Check if the default view of the dashboard is Pan-India view. ,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard",The default view of the dashboard should be a Pan-India view.,,
+BL/418,,Check if all data across all cards is a sum of data across all states. ,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard",All data across all cards should be a sum of data across all states. ,,
+BL/419,,Check if the overview card title shows Overview only and will not be ‘Pan-India’.,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check National dashboard",The overview card title should be Overview only and will not be ‘Pan-India’.,,
+BL/420,,Check if Date Range filter is available,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check the Date Range filter",Date Range filter should be available,,
+BL/421,,Check if State filter is available,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check the State filter",State filter should be available,,
+BL/422,,Check if ULB filter is available,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check the ULB filter",ULB filter should be available,,
+BL/423,,Check if the Denomination is in Lac,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check the Denomination",Denomination should be in Lac,,
+BL/424,,Check if the Top 3 and Bottom 3 performing cards shows the Top 3 and Bottom 3 Performing States,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check Top 3 and Bottom 3 cards",Top 3 and Bottom 3 performing cards should show the Top 3 and Bottom 3 Performing States,,
+BL/425,,Check if the tables ‘Key Performance Indicators’ and ‘Tax Heads’ under ‘Revenue' tab shows state-wise data.,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue Tab
+4. Check the Key Performance Indicators’ and Tax Heads tables",The tables ‘Key Performance Indicators’ and ‘Tax Heads’ should show state-wise data.,,
+BL/426,,Check if the tables ‘Status by Boundary’ under Service tab shows state-wise data.,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Service Tab
+4. Check the Key Performance Indicators’ and Tax Heads tables",The tables ‘Status by Boundary’ under Service tab should show state-wise data.,,
+BL/427,,Check if Date Range filter is applicable for all cards except for ‘Today’s Collection' metric in the Pan-India card. ,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Modify Date Range filter
+4. Check Pan-India card",Date Range filter should be applicable for all cards except for ‘Today’s Collection' metric in the Pan-India card. ,,
+BL/428,,Check if State and ULB filters are applicable for all cards,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Modify State and ULB filter
+4. Check all cards",State and ULB filters should be applicable for all cards,,
+BL/429,,Check if User is able to select multiple states and ULBs. ,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Try to select multiple States and ULBs",User should be able to select multiple states and ULBs. ,,
+BL/430,,Check if the search functionality is dynamic i.e. results get populated based on the input that a user is typing in the search parameter for State,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Search field on State field
+4. Enter search parameter",Search functionality should be dynamic i.e. results should be populated based on the input that a user is typing in the search parameter for state,,
+BL/431,,Check if the search functionality is dynamic i.e. results get populated based on the input that a user is typing in the search parameter for ULB,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Search field on State field
+4. Enter search parameter",Search functionality should be dynamic i.e. results should be populated based on the input that a user is typing in the search parameter for ULB,,
+BL/432,,Check if all data on the dashboard is relevant to the state when State is selected,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select State",All data on the dashboard should be relevant to the selected State,,
+BL/433,,Check if the Top 3 and Bottom 3 cards shows the Top 3 and Bottom 3 ULBs for that State,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select State
+4. Check Top 3 and Bottom 3 cards",Top 3 and Bottom 3 cards should  show the Top 3 and Bottom 3 ULBs for that State,,
+BL/434,,Check if the Key Performance Indicators and the Tax Heads card shows data for ULBs for that particular state,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select State
+4. Check Key Performance Indicators and the Tax Heads cards",The Key Performance Indicators and the Tax Heads card should show data for ULBs for that particular state,,
+BL/435,,Check if the ULB filter shows ULBs specific to that particular state only when State is selected,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select State
+4. Check ULB filter",The ULB filter should show ULBs specific to the selected State,,
+BL/436,,Check if all data on the dashboard is relevant to the ULB when ULB is selected,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select ULB",All data on the dashboard should be relevant to the selected ULB,,
+BL/437,,Check if the Top 3 and Bottom 3 cards shows the Top 3 and Bottom 3 ULBs for that ULB,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select ULB
+4. Check Top 3 and Bottom 3 cards",Top 3 and Bottom 3 cards should  show the Top 3 and Bottom 3 ULBs for that ULB,,
+BL/438,,Check if the Key Performance Indicators and the Tax Heads card shows data for Wards in that particular ULB,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select ULB
+4. Check Key Performance Indicators and the Tax Heads cards",The Key Performance Indicators and the Tax Heads card should show data for Wards in that particular ULB,,
+BL/439,,Check if the state filter reflects only the state relevant to the ULB that is selected. ,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Select ULB
+4. Check ULB filter",The state filter should reflect only the state relevant to the ULB that is selected. ,,
+BL/440,,Check if all cards are downloadable in JPG format,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Download as JPG",All cards should be downloadable in JPG format,,
+BL/441,,Check if all cards are shareable via email in JPG format,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Share
+4. Click on email",All cards should be shareable via email in JPG format,,
+BL/442,,Check if all cards are shareable via WhatsApp in JPG format,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Share
+4. Click on whatsapp",All cards should be shareable via WhatsApp in JPG format,,
+BL/443,,Check if ‘Key Performance Indicators' under ‘Revenue’ tab is downloadable as an excel file,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue tab
+4. Click on Download icon on Key Performance Indicators table
+5. Click on Download as excel",Key Performance Indicators' under ‘Revenue’ tab should be downloadable as an excel file,,
+BL/444,,Check if ‘Tax Heads’ under ‘Revenue’ tab is downloadable as an excel file,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue tab
+4. Click on Download icon on Tax Heads table
+5. Click on Download as excel",‘Tax Heads’ under ‘Revenue’ tab should be downloadable as an excel file,,
+BL/445,,Check if 'Status by Boundary’ table is downloadable as an excel file,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Service tab
+4. Click on Download icon on Status by Boundary table
+5. Click on Download as excel",Status by Boundary table should be downloadable as an excel file,,
+BL/446,,Check if the name of the heading ‘Key Financial Indicators’ changed ‘Key Performance Indicators’,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue tab
+4. Check the heading",Name of the heading ‘Key Financial Indicators’ should be changed to ‘Key Performance Indicators’,,
+BL/447,,"Check if, under the heading ‘Key Performance Indicators', below line is displayed
+'% values indicate change against same period last year''.",UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue Tab
+4. Check Key Performance Indicators heading","Below line should be displayed under Key Performance Indicators heading
+'% values indicate change against same period last year''.",,
+BL/448,,"Check if, under the heading ‘Tax Heads', below line is displayed
+'% values indicate change against same period last year''.",UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue Tab
+4. Check Tax Heads heading","Below line should be displayed under Tax Heads heading
+'% values indicate change against same period last year''.",,
+BL/449,,Check if hovering on metrics in the ‘Overview’ card and ‘Key Financial Indicators’ displays the definition of the metrics as mentioned in the KPI sheet.,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Revenue Tab
+4. Hover or Overview card or Key Financial Indicators card",Hovering on metrics in the ‘Overview’ card and ‘Key Financial Indicators should display the definition of the metrics as mentioned in the KPI sheet.,,
+BL/450,,"Check if the Pan-India card contains the following metrics
+‘Total Applications’ and ‘Total License Issued’",Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Service Tab
+4. Check Tax Heads heading","The Pan-India card should contain only the following metrics
+ ‘Total Applications’ and ‘Total License Issued’",,
+BL/451,,Check if ‘Total Active ULBs’ is removed from Pan-India card,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Service Tab
+4. Check Tax Heads heading",‘Total Active ULBs’ should be removed from Pan-India card,,
+BL/452,,Check if hovering on metrics in the ‘Overview’ card and ‘Status by Boundary’ displays the definition of the metrics as mentioned in the KPI sheet.,UI,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Click on Service Tab
+4. Hover or Overview card or Key Financial Indicators card",Hovering on metrics in the ‘Overview’ card and ‘Status by Boundary' should display the definition of the metrics as mentioned in the KPI sheet.,,
+BL/453,,Check if ward Level drill-down is the final level of drill-down.,Functional,,"1. Login as Employee
+2. Click on TL National Dashboard
+3. Check Service Report",Ward Level drill-down should be the final level of drill-down.,,

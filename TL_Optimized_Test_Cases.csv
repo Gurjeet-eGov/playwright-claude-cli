@@ -1,0 +1,391 @@
+S.No,Sub Feature,Scenario,Test Type,Test Data,Steps to Execute,Expected Result,Consolidated From,Automatable,Observation (Pass/Fail),Comment
+TL-001,Login,Employee login via counter employee credentials and navigate to Trade License module,Functional,"Valid counter employee username, password, city","1. Open employee portal
+2. Enter Username
+3. Enter Password
+4. Select city
+5. Click on Continue","Redirects to new UI; Trade License card displays with options: Apply for Trade License, Renew Trade License, My Applications","BL/01, BL/02, BL/03",No (Manual),,
+TL-002,Login,Citizen OTP-based login and verify Trade License card on homepage,Functional,Valid citizen mobile number,"1. Open citizen portal
+2. Enter mobile number
+3. Enter OTP received via SMS
+4. Verify TL card on homepage","Login succeeds; TL card shows: Apply for Trade License, Renew Trade License, My Applications","BL/232, BL/233, BL/234, BL/235, BL/236",No (Manual),,
+TL-003,Employee Create - Wizard Navigation,Employee completes full TL application wizard end-to-end (happy path),Functional,"Trade Name: 'Test Trade', Structure: Pucca/Yes, Commencement Date: current date, Trade Category: Goods, Trade Type and Sub-type with valid UOM value, Accessories: Yes with valid details, Property: linked via search","1. Login as counter employee
+2. Click Apply for Trade License
+3. Click Next to navigate to Trade Name screen
+4. Enter valid trade name; click Next
+5. Select Confirm Structure Type (Yes/No); click Next
+6. Select Building Type (Pucca/Kutcha); click Next
+7. Pick Trade Commencement Date; click Next
+8. Fill Trade Units (Category, Type, Sub-type, UOM, UOM Value); click Next
+9. Select Accessories (Yes); fill Accessory details; click Next
+10. Select 'Yes' for know property; search and link property; click Next
+11. Upload required documents; click Next
+12. Review summary screen; click Submit Application",Application submitted successfully with unique application number; success screen shows status 'Application Created Successfully' and notification text,"BL/04, BL/05, BL/07, BL/08, BL/10, BL/11, BL/12, BL/13, BL/15, BL/16, BL/17, BL/18, BL/20, BL/22, BL/23, BL/45, BL/46, BL/130, BL/131",Yes,,
+TL-004,Employee Create - UI Screens,"Verify UI layout of all wizard screens (Structure Type, Building Type, Trade Units, Accessories, Property screens, Summary)",UI,,"1. Login as counter employee and begin TL application
+2. Check Confirm Structure Type screen has Yes/No radio buttons
+3. Check Building Type screen has Pucca/Kutcha radio buttons
+4. Check Trade Units screen fields: Category radio, Trade Type dropdown, Trade Sub-Type dropdown, UOM, UOM Value, Add More Trade Units, Next button
+5. Check Trade Accessories screen fields: Accessory dropdown, Accessory Count, UOM, UOM Value, Add More Trade Accessories, Next button
+6. Check 'Do you have Accessories?' screen has Yes/No radio buttons
+7. Check Summary screen has all sections with Edit icons: Trade Details, Location Details, Owner Details, Document Details, Submit button","All screens render with correct fields, labels, radio buttons, dropdowns, and navigation buttons as specified","BL/06, BL/09, BL/14, BL/19, BL/21, BL/47",Yes,,
+TL-005,Employee Create - Property Linking,"Verify Search Property flow: both 'Property ID' and 'Door Number' search options, display of property cards, and link property to application",Functional,Valid Property ID and valid door number / owner name,"1. Navigate to 'Do you know your property?' screen
+2. Select Yes; check Search Property screen has two radio options
+3. Select 'I know my Property ID'; verify fields: City (mandatory), Property ID, Old Property ID, Owner Mobile No; check OR text between params, info icon with tooltip
+4. Select 'I want to search using Door Number'; verify fields: City (mandatory), Locality (mandatory), Door No., Consumer Name
+5. Enter valid search parameters; click Search; verify property cards display with Amount Due, Property ID, Owner's Name, Address, Status, Link Property button
+6. Click 'Link Property to Application'; verify Property Details screen shows Property ID, Owner's Name, Address, Status, View More Details, Change Property, Next button",Property search works for both modes; relevant results displayed; property linked successfully; navigates to Document Details on clicking Next,"BL/29, BL/30, BL/31, BL/32, BL/35, BL/36, BL/37, BL/38, BL/39, BL/40, BL/41, BL/42, BL/43, BL/44",Yes,,
+TL-006,Employee Create - Property: No Property / GIS / Create PT,"Verify 'No' property path: redirect to GIS, option to create lightweight PT, skip to GIS, and property creation success",Functional,City with option to create new property,"1. On 'Do you know your property?' select No
+2. If city has no new-property option: verify redirect to GIS (Location Details) page
+3. If city has new-property option: verify navigation to lightweight PT page with Skip option
+4. Enter property details and click Next; verify Success screen with 'Property created Successfully', Reference No., Proceed button
+5. Click Skip; verify redirect to GIS page",Correct paths taken based on city configuration; success screen shows property reference; Skip navigates to GIS,"BL/24, BL/25, BL/26, BL/27, BL/28",Yes,,
+TL-007,Employee Create - View Property,View linked property details from application summary,Functional,,"1. From the application summary or citizen view, click 'View Property' link
+2. Check Property Details screen sections","Property Details screen shows: Property ID, Owner Name, Status; Location details (Pincode, City, Locality, House/Door Number, Building/Colony); Ownership details (Ownership Type, Mobile Number, Owner Name, Guardian Name, Relationship, Special Applicant Category, Correspondence Address)","BL/48, BL/49",Yes,,
+TL-008,Employee Create - Validation,"Employee create form field validations: Trade Name, GST, Sq Ft, Employees, UOM Value, Pincode, Owner Name, Mobile Number, Guardian Name, Email (Employee role)",Error Handling,"Invalid inputs: digits/special chars in name fields, invalid GST, alpha chars in numeric fields, invalid pincode, invalid email, >10 digits in mobile","1. In Trade Name field enter digits and special characters; check validation message
+2. Enter invalid GST number; check validation
+3. Enter characters in Operational sq.ft. and Number of Employees; check validation
+4. Enter characters/special chars in UOM Value; check 'Wrong UOM value' message
+5. Enter characters in Pincode; check 'Invalid pincode' message
+6. Enter digits in Owner's Name; check error
+7. Enter characters/special chars in Mobile Number; check 'Please provide valid mobile number'
+8. Enter digits in Guardian's Name; check error
+9. Enter invalid email; check error
+10. Click Submit without mandatory fields; check errors displayed",Each invalid input triggers a specific validation message; submit blocked without mandatory fields,"BL/87, BL/88, BL/94, BL/95, BL/96, BL/97, BL/98, BL/104, BL/110, BL/113, BL/114, BL/120, BL/122, BL/123, BL/124, BL/127, BL/129",Yes,,
+TL-009,Employee Create - Form Fields UI,"Employee create form field UI checks: Financial Year, License Type, dropdowns, calendar, structure sub-type dependency, accessories",UI,,"1. Check Financial Year has current year selected by default; other years selectable
+2. Check License Type is Permanent by default and non-editable
+3. Check Structure Type dropdown has values; Structure Sub-type values change per Structure Type selection
+4. Check calendar icon opens datepicker; date selected displays in field
+5. Check Trade Category, Trade Type, Trade Sub-type dropdowns populated
+6. Verify UOM auto-populates as 'HP' for selected accessory
+7. Check UOM Value accepts input
+8. Click 'Add Trade Units' to verify additional unit row appears
+9. Check Accessories dropdown values match selected Trade Category
+10. Click 'Add Trade Accessories' to verify additional row appears
+11. Check Locality dropdown populated; Street name dropdown shows values
+12. Check Ownership Type dropdown has values; Gender dropdown has values; Relationship dropdown has values
+13. Check 'Choose File' button displayed for document upload","All dropdowns, defaults, dependencies, and UI elements function as specified","BL/83, BL/84, BL/85, BL/86, BL/89, BL/90, BL/91, BL/92, BL/93, BL/99, BL/100, BL/101, BL/102, BL/103, BL/105, BL/106, BL/107, BL/108, BL/109, BL/111, BL/112, BL/115, BL/116, BL/117, BL/118, BL/119, BL/125, BL/126, BL/128",Yes,,
+TL-010,Employee Create - Success Screen,Employee TL application success screen content and actions,Functional,,"1. Submit a complete TL application as counter employee
+2. Verify success screen title and application number
+3. Check notification text is present
+4. Click 'Print Application' and verify PDF opens
+5. Click 'Go Back to Home page' and verify navigation to mseva home",Status shows 'Application Created Successfully'; unique application number generated; notification text displayed; Print Application functional; home navigation works,"BL/130, BL/131, BL/132, BL/133, BL/134",Yes,,
+TL-011,Employee Inbox - Card and Navigation,Employee TL inbox card displays correct counts and navigates to inbox page,Functional/UI,,"1. Login as employee and verify TL card on DIGIT home
+2. Check TL card shows: total applications count, nearing SLA count, Inbox(Count), New Trade License, Renew Trade License options
+3. Click Inbox and verify navigation to Inbox page
+4. Verify Inbox page shows: New TL Application, Renew TL, Reports, Search Application, Dashboard options",TL card displays correct counts; navigation to inbox works; all menu items visible,"BL/51, BL/52, BL/53, BL/54, BL/55, BL/56, BL/57, BL/58, BL/59, BL/60",Yes,,
+TL-012,Employee Inbox - Search and Filters,Employee inbox search by application number and mobile number with filter options,Functional,"Valid application number, valid 10-digit mobile number","1. On Inbox page search by valid application number; verify results displayed
+2. Search by valid mobile number (10 digits); verify results
+3. Attempt search with empty fields; verify error message
+4. Apply filters: Assigned to All / Assigned to Me radio buttons; select Locality; select Status (Payment Due / Created)
+5. Click Apply filter; verify results match filter selection
+6. Verify search results table shows: Application Number, Application Date, Locality, Status, Current Owner, SLA remaining
+7. Verify row count selector and pagination (next/previous) buttons work",Search and filter produce correct results; empty search shows error; all result columns present; pagination functional,"BL/61, BL/62, BL/63, BL/65, BL/66, BL/68, BL/69, BL/70, BL/71, BL/72, BL/73, BL/74, BL/75, BL/76, BL/77, BL/78, BL/79, BL/80",Yes,,
+TL-013,Employee Inbox - +91 Prefix Display,"Verify +91 prefix is displayed on all Mobile Number input fields across the application (Inbox, Employee Create, Employee Payment, Search Property, Employee Renewal, Citizen Owner Type / Institutional)",UI,,"1. Check +91 prefix in Inbox search mobile field
+2. Check +91 prefix in Employee Create owner mobile field
+3. Check +91 prefix in Employee Payment payer mobile field
+4. Check +91 prefix in Search Property owner mobile field
+5. Check +91 prefix in Employee Renewal owner mobile field
+6. Check +91 prefix in Citizen/Employee Owner Type - Institutional authorized person mobile field",+91 prefix is consistently displayed in all mobile number input fields across all six locations,"BL/33, BL/64, BL/121, BL/168, BL/399, BL/409",Yes,,
+TL-014,Employee Inbox - Clear Search,"Clear Search clears all fields across Inbox, Search Application, and Employee Renewal search screens",UI,Fill in search fields before clearing,"1. On Inbox search panel: enter application number and mobile number; click Clear Search; verify all fields cleared
+2. On Search Application screen: fill multiple search parameters; click Clear Search; verify all fields cleared
+3. On Employee Renewal Search Trade screen: fill search parameters; click Clear Search; verify all fields cleared",Clicking Clear Search empties all search fields on each respective screen,"BL/67, BL/147, BL/192",Yes,,
+TL-015,Search Application,"Search Application screen fields, search execution, and result navigation",Functional,"Valid application number, license type, date range, license number, status, trade name","1. From Inbox click Search Application; verify navigation
+2. Verify screen shows: Application Number, License Type dropdown, From/To date pickers, Trade License Number, Application Status dropdown, Trade Name, Search button, Clear Search
+3. Search by application number; verify results
+4. Search by license type, date range, status, trade name individually
+5. Enter invalid inputs; verify error messages for invalid fields
+6. Click Search with empty fields; verify error
+7. Verify results table shows: Application Number, Application Date, License Number, License Type, Trade Name, Trade Owner Name, Status
+8. Click Application Number hyperlink; verify navigation to Application Details
+9. Verify 'Take Action' button with: Edit Application, Proceed to Payment options
+10. For approved applications verify Renew Trade License option; clicking app number in approved status shows trade details",Search Application works correctly with all parameters; results displayed with correct columns; navigation and action buttons functional,"BL/136, BL/137, BL/138, BL/139, BL/140, BL/141, BL/142, BL/143, BL/144, BL/145, BL/146, BL/148, BL/149, BL/150, BL/151, BL/152, BL/153, BL/154, BL/155, BL/156",Yes,,
+TL-016,Employee Payment,Employee collect payment: full flow from Proceed to Payment to receipt download,Functional,"Approved TL application with payment due; Payer name, valid 10-digit mobile, payment mode selection","1. From Search Application click 'Proceed to Payment'; verify navigation to Collect Payment screen
+2. Verify Trade License Number displayed
+3. Verify Payment Details: License Fee, Tax Heads, total due amount
+4. Select Full Amount radio; verify amount field is disabled
+5. Select Custom Amount radio; verify amount field is enabled; enter amount less than 100; check error
+6. Verify Total due < 100 disables Custom Amount radio
+7. Select Paid By from dropdown
+8. Enter digits in Payer name; verify error; enter valid name
+9. Enter valid 10-digit mobile number
+10. Select payment mode (Debit/Credit Card); verify Transaction Number and Re-Enter fields appear; enter <6 or >6 digits; verify error
+11. Enter valid Manual Receipt Number and select Manual Receipt Date
+12. Click 'Proceed to Collection'; verify unique receipt number generated
+13. Verify success screen: 'Payment Collected' title, notification text, Receipt and Renewal Certificate buttons
+14. Download Receipt and Renewal Certificate; verify PDFs open
+15. Click 'Go Back to Home page'; verify navigation",Payment collected successfully; receipt and renewal certificate downloadable; all validations work correctly,"BL/158, BL/159, BL/160, BL/161, BL/162, BL/163, BL/164, BL/165, BL/166, BL/167, BL/169, BL/170, BL/171, BL/172, BL/173, BL/174, BL/175, BL/176, BL/177, BL/178, BL/179, BL/180",Yes,,
+TL-017,Employee Renewal - Search Trade,"Employee renewal search: form UI, field validations, and result navigation",Functional,"Valid trade license number, 10-digit mobile, trade name, date range","1. Click 'Renew Trade License' from TL card; verify navigation to Search Trade screen
+2. Verify screen shows: Trade License Number, Trade Owner's Number, License Issued From, License Issued To, Trade Name, Search button, Clear Search
+3. Enter 10 digits in Trade Owner's Number; verify accepted
+4. Enter char/special char in Trade Owner's Number; verify error
+5. Select License Issued From and To dates; verify accepted
+6. Enter chars in Trade Name; verify accepted; enter digits; verify error
+7. Click Search with valid params; verify results with columns: License Number, Trade Name, Trade Issued On, Valid Till, Locality, Status
+8. Verify License Number is a hyperlink; click it; verify navigation to Trade Details page
+9. Verify all original details displayed with Trade Units and Accessories in separate boxes
+10. Verify 'Renew Trade License' option in Take Action button",Search Trade screen functions correctly; results display; navigation to license details works; Take Action shows Renew option,"BL/182, BL/183, BL/184, BL/185, BL/186, BL/187, BL/188, BL/189, BL/190, BL/191, BL/193, BL/194, BL/195, BL/196, BL/197, BL/198, BL/199",Yes,,
+TL-018,Employee Renewal - Submit,"Employee renews trade license: pre-populated form, field editability, submission and payment",Functional,Valid approved trade license,"1. Click 'Renew Trade License' from Trade Details; navigate to Renew Trade License Application page
+2. Verify info text displayed: 'If there are changes in the trade details...'
+3. Verify all fields are pre-populated
+4. Verify License Type and Financial Year fields are disabled/non-editable
+5. Edit allowed fields; click Submit
+6. Verify success screen: 'Renewal Application Submitted Successfully', unique application number, notification text
+7. Verify 'Print Application' button works
+8. Verify 'Collect Payment' button displayed; click it; verify navigation to Collect Payment screen",Renewal submitted successfully; pre-populated data preserved; License Type and FY non-editable; success screen and payment navigation functional,"BL/200, BL/201, BL/202, BL/203, BL/204, BL/205, BL/206, BL/207, BL/208, BL/209, BL/210",Yes,,
+TL-019,Employee Workflow - DV Actions,"Document Verifier workflow: pending status display, Verify & Forward, and Reject actions",Functional,Application submitted by counter employee or citizen,"1. After counter employee or citizen submits application, verify application goes to DV queue
+2. Login as DV; verify 'Pending for Document Verification' status displayed on application
+3. Verify DV action options: Verify and Forward, Reject
+4. DV selects Reject; verify application status changes to REJECTED
+5. Verify citizen and employee cannot take any further action on rejected application
+6. DV selects Verify and Forward; verify application moves to FI queue",DV sees correct pending status; Reject changes status to REJECTED with no further actions allowed; Verify and Forward routes to FI,"BL/211, BL/212, BL/213, BL/214, BL/215, BL/216, BL/217, BL/218",Yes,,
+TL-020,Employee Workflow - FI Actions,"Field Inspector workflow: all four action paths (Verify & Forward, Send Back, Send Back to Citizen, Reject)",Functional,Application in FI queue,"1. Login as FI; verify 'Pending for Field Inspection' status
+2. Verify FI action options: Verify and Forward, Send Back to Citizen, Send Back, Reject
+3. FI selects Send Back; verify application moves back to DV
+4. FI selects Send Back to Citizen; verify application goes back to Citizen
+5. Verify application modified by citizen appears in FI queue; FI can take action on it
+6. FI selects Verify and Forward; verify application moves to Approver queue
+7. FI selects Reject; verify application status changes to REJECTED",All FI action paths route application to correct next state; citizen-modified applications visible to FI,"BL/219, BL/220, BL/221, BL/222, BL/223, BL/225, BL/226",Yes,,
+TL-021,Employee Workflow - Approver Actions,"Approver workflow: pending status, Approve and Reject actions, post-approval payment option",Functional,Application forwarded by FI,"1. Login as Approver; verify 'Pending for Approval' status
+2. Verify Approver action options: Approve, Reject
+3. Approver selects Approve; verify status changes to APPROVED
+4. Login as counter employee; verify Pay option displayed for approved application
+5. Verify counter employee has Renew option for approved application",Approver sees correct status; Approve changes status to APPROVED; counter employee sees Pay and Renew options post-approval,"BL/224, BL/227, BL/228, BL/229, BL/230",Yes,,
+TL-022,Citizen Create - Wizard Navigation (Happy Path),Citizen creates new TL application end-to-end wizard navigation,Functional,"Valid trade name, structure type, building type, commencement date, trade units, accessories, location, ownership details, documents","1. Login as citizen; click Apply for Trade License
+2. Verify intro screen with doc requirements text; click Next
+3. Enter trade name; click Next
+4. Select Structure Type (Yes=immovable); click Next to Building Type
+5. Select Building Type (Pucca/Kutcha); click Next to Trade Commencement Date
+6. Select date; click Next to Trade Units
+7. Fill Trade Units; click Next to Accessories question
+8. Select Yes for accessories; fill Trade Accessories; click Next
+9. Click Next to Pin Trade Location; select map pin location; click Next
+10. Skip or enter pincode; click Next/Skip to Provide Trade Address
+11. Select City and Locality; click Next; enter street address; click Next
+12. Enter Landmark or Skip; click Next to Ownership Type
+13. Select Single Owner; fill Owner Details (name, gender, DOB, mobile, guardian); click Next
+14. Enter Owner's Address or mark Same as Trade Address; click Next
+15. Upload Proof of Identity, Ownership Document, Owner's Photograph; click Next to summary
+16. Review summary; click Submit",Application submitted with unique application number; status 'Application Created Successfully'; notification text shown,"BL/237, BL/238, BL/239, BL/243, BL/248, BL/249, BL/261, BL/269, BL/272, BL/280, BL/284, BL/285, BL/289, BL/294, BL/296, BL/298, BL/300, BL/309, BL/314, BL/319, BL/320, BL/322, BL/326, BL/327, BL/329",No (Manual),,
+TL-023,Citizen Create - UI Screens,Verify UI elements on citizen wizard screens,UI,,"1. Verify intro screen content: time estimate text, required docs list, max file size info, Next button, Back link
+2. Verify Trade Name screen: input accepts text, info text shows current license year
+3. Verify Structure Type screen: 'Confirm Structure Type' heading, 'Do you run your trade on a immovable structure?' question, Yes/No radio buttons; Next disabled if nothing selected; once selected cannot deselect
+4. Verify Vehicle Type screen: 'Choose whether the vehicle is motor driven or pulled by hand' text; radio buttons; Next disabled if nothing selected
+5. Verify Building Type screen: description text and Pucca/Kutcha info text displayed
+6. Verify Trade Units: Trade Category radio, Trade Type/Sub-type dropdowns with dependency, UOM auto-populates, Add More Trade Units button
+7. Verify Accessories screen: Accessory dropdown, Count input, UOM auto-populates, Add More button
+8. Verify Address screens: City-Locality dependency; Street and Building accept special chars; Landmark field accepts special chars
+9. Verify Multiple Owners: Add Owner button, Primary Owner checkbox (only one selectable), info text on owner's address screen
+10. Verify document screens: file type info text, Choose File button, Next disabled without upload
+11. Verify summary screen: all sections with Change button and Submit Application",All citizen wizard screens render correctly with specified elements and behaviors,"BL/238, BL/240, BL/242, BL/244, BL/245, BL/246, BL/247, BL/250, BL/251, BL/252, BL/253, BL/254, BL/255, BL/262, BL/263, BL/264, BL/265, BL/266, BL/268, BL/270, BL/271, BL/273, BL/274, BL/276, BL/277, BL/279, BL/281, BL/282, BL/283, BL/286, BL/288, BL/290, BL/291, BL/292, BL/293, BL/295, BL/297, BL/299, BL/302, BL/304, BL/305, BL/306, BL/307, BL/308, BL/310, BL/311, BL/312, BL/313, BL/315, BL/317, BL/318, BL/321, BL/323",Yes,,
+TL-024,Citizen Create - Validation (Employee/Citizen),"Validate field-level error messages for Trade Name, Mobile Number, Pincode, UOM Value in both Employee and Citizen create flows",Error Handling,"Invalid: digits/special chars in trade name, chars/special chars in mobile, chars in pincode, chars in UOM value, invalid accessory count","1. Trade Name (Employee/Citizen): enter digits and special characters; verify 'Invalid Trade Name' error
+2. Mobile Number (Employee/Citizen): enter char and special chars; verify 'Please provide valid mobile number'
+3. Pincode (Employee/Citizen): enter characters and special chars; verify 'Invalid pincode' message
+4. UOM Value - Trade Units (Employee/Citizen): enter chars/special chars; verify 'Wrong UOM value' message
+5. UOM Value - Accessories (Employee/Citizen): enter chars/special chars; verify 'Wrong UOM value' message
+6. Accessory Count (Citizen): enter chars/special chars; verify validation message
+7. Guardian's Name (Employee/Citizen): enter digits; verify error message",All validation messages appear for invalid input in both Employee and Citizen create flows,"BL/88, BL/104, BL/110, BL/114, BL/123, BL/124, BL/241, BL/258, BL/267, BL/275, BL/278, BL/287, BL/301, BL/303",Yes,,
+TL-025,Citizen Create - Map Pin Location,Citizen pins trade location on map,Functional,,"1. Reach 'Pin Trade Location' screen in citizen TL creation
+2. Verify map displayed
+3. Attempt to click Next without selecting location; verify Next button disabled
+4. Select location on map; verify Next button enabled
+5. Click Next; verify navigation to 'Do you know the pincode?' screen",Map renders; Next disabled until location selected; location pin enables Next; navigation continues,"BL/281, BL/282, BL/283, BL/284",No (Manual),,
+TL-026,Citizen Create - Summary and Document View,"Citizen summary screen: change details, view documents, and submit",Functional,Completed TL application draft,"1. Reach summary (Check your Answers) page
+2. Verify all entered details are displayed
+3. Click CHANGE button on any section; verify navigation to that section
+4. View uploaded document; verify visible
+5. Click Submit; verify unique application number and success status",Summary shows all data; Change navigates to correct section; documents viewable; submission generates application number,"BL/323, BL/324, BL/325, BL/326, BL/327, BL/328, BL/329",Yes,,
+TL-027,My Applications,"Citizen My Applications list, details view, downloads, and application timeline",Functional,Citizen with multiple applications in different statuses,"1. Click 'My Applications'; verify navigation to application list page
+2. Verify list shows: Application No., Application Category, Owner Name, Trade Name, Status, SLA days, View Details button, Back link
+3. Verify application with 'Pending Payment' status shows 'View Details & Pay' button
+4. Verify application in workflow shows 'View Details' button
+5. Click View Details; verify application details page opens with: Application Details, Download button, Application Timeline
+6. Click download link; verify application acknowledgement downloads as PDF
+7. Click download link for payment receipt; verify PDF downloads
+8. Verify application timeline shows workflow status
+9. Click View Documents; verify documents viewable",My Applications list and detail pages function correctly; all downloads work; timeline reflects current workflow status,"BL/331, BL/332, BL/333, BL/334, BL/335, BL/336, BL/337, BL/338, BL/339, BL/340",Yes,,
+TL-028,Citizen Payment,"Citizen makes payment via Make Payment button: payment screen, third-party gateway, success screen, receipt download",Functional,Application in 'Pending Payment' status,"1. Click 'Make Payment' button (or 'View Details & Pay'); verify Payment screen displayed
+2. Verify payment screen shows: Total Amount Due, Select Payment Method, Info text, Pay button
+3. Select payment method; click Pay; verify third-party payment screen opens
+4. Complete payment; verify system navigates back to mseva
+5. Verify payment complete page shows: Payment Complete message, Reference No., Application No., Application Date, Transaction ID, Amount Paid, Download Receipt button, Go Back to Homepage
+6. Download receipt; verify PDF opens",Payment flow completes; all payment confirmation details displayed; receipt downloadable,"BL/342, BL/343, BL/344, BL/345, BL/346, BL/347, BL/348",No (Manual),,
+TL-029,Citizen Payment,TL certificate download after payment and payment interruption error handling,Functional/Error Handling,Completed payment; interrupted payment session,"1. After successful payment, verify TL certificate can be downloaded
+2. Interrupt payment mid-flow; verify error message 'Try after 30 mins' is displayed",TL certificate downloadable post-payment; interrupted payment shows appropriate error message,"BL/349, BL/350",No (Manual),,
+TL-030,Citizen Renewal - Search and Select License,"Citizen renewal: list of pending licenses, search trade license, and select license to renew",Functional,Citizen account with licenses tagged to mobile number; valid TL number,"1. Click 'Renew Trade License' from TL card; verify navigation to Renewal of Trade License screen
+2. Verify info text about licenses tagged to mobile number
+3. Verify list shows licenses with: Trade License (number), Trade Name, Owner Name, License Status (Active/Expired with penalty info), Renew button, 'Not able to find Trade license' text, 'Click here to Search Trade License' link
+4. Click 'Click here to Search Trade License'; verify navigation to Search Trade License screen
+5. Verify screen shows: 'Provide atleast one search parameter' text, Owner Mobile Number (10 digits, validates chars/special chars), Trade License Number (valid format, validates invalid), Search button
+6. Enter mobile number; verify all applications for that mobile listed
+7. Enter trade license number; verify result displayed
+8. Verify application count shown next to search results
+9. Click Renew button on a license; verify navigation to Renew Trade License summary page",All renewal list and search functionalities work; correct licenses displayed; navigation to renewal summary page,"BL/352, BL/353, BL/354, BL/355, BL/356, BL/357, BL/358, BL/359, BL/360, BL/361, BL/362, BL/363, BL/364, BL/365, BL/366",Yes,,
+TL-031,Citizen Renewal - Submit,"Citizen renews trade license: summary review, edit, submit, and success",Functional,Valid trade license pending renewal,"1. On Renewal summary page verify info text displayed
+2. Verify all details displayed with Change and Submit Application buttons
+3. Click Change; verify navigation to respective section
+4. Verify details pre-populated for renewal
+5. Verify editable fields: Structure Sub-type, Trade Details (Category/Type/Sub-type/UOM/UOM Value), Owner info (except owner count)
+6. Click Submit; verify unique application number generated
+7. Verify success screen: 'Renewal Application Submitted Successfully', notification text
+8. Click 'Go Back to Home page'; verify navigation",Citizen renewal submission works; pre-populated; correct fields editable; success screen correct; home navigation works,"BL/367, BL/368, BL/369, BL/370, BL/371, BL/372, BL/373, BL/374, BL/375",Yes,,
+TL-032,Renewal Validation - Active Application Block,Renewal blocked when active renewal application already exists; allowed when no active renewal,Functional/Error Handling,License with existing active renewal; license with no active renewal,"1. Attempt to renew a license that already has an active renewal application
+2. Verify user cannot proceed; verify validation message: 'There is an active renewal application XXX created already for the given license number. You cannot proceed'
+3. Attempt to renew a license with no active renewal; verify user can proceed
+4. Attempt to renew same financial year multiple times; verify blocked",Renewal blocked with correct message when active renewal exists; allowed when none; multiple same-FY renewals blocked,"BL/376, BL/377, BL/381, BL/382",Yes,,
+TL-033,Renewal Validation - Rejected / Cancelled Status,Renewal allowed after rejection; blocked after cancellation with validation message,Functional/Error Handling,License with rejected renewal; license with cancelled status,"1. Previous renewal application was Rejected by employee; attempt new renewal
+2. Verify user can create new renewal application
+3. Previous application was Cancelled by employee; attempt renewal
+4. Verify user cannot renew; verify message: 'The given license number is in cancelled status. Renewal application cannot be processed.'
+5. Verify employee cannot cancel old TL reference when renewal is not in Cancelled/Expired status; verify validation message: 'There is a renewal application number XXX available for the selected license. You cannot proceed.'
+6. Verify employee can cancel old license once all renewals are in Cancelled/Expired status",Post-rejection renewal allowed; post-cancellation renewal blocked with message; employee cancel rules enforced with messages,"BL/378, BL/379, BL/380, BL/391, BL/392, BL/393",Yes,,
+TL-034,Renewal Validation - Expiry Scenarios,Approver can manually expire license; expiry before/after expiry date affects renewal eligibility; system expiry allows renewal,Functional/Error Handling,Active approved license,"1. Login as Approver; verify Cancel option available; select Cancel; verify application cancelled
+2. Verify Approver can manually Expire the license (before and after expiry date)
+3. License manually expired BEFORE expiry date: attempt renewal by Citizen/CE; verify blocked; verify message: 'This License cannot be renewed. Please contact ULB official for details.'
+4. License manually expired AFTER expiry date: attempt renewal; verify allowed
+5. License expired by system after expiry date: attempt renewal; verify allowed",Approver can cancel/expire; pre-expiry-date manual expiry blocks renewal with correct message; post-expiry-date manual/system expiry allows renewal,"BL/383, BL/384, BL/385, BL/386, BL/387, BL/388",No (Manual),,
+TL-035,Renewal Validation - Pending Renewal Display,Licenses pending renewal displayed correctly on Employee Search Trade and Citizen Renew screens,UI,Licenses pending renewal,"1. Login as Employee; go to Search Trade License; verify only applications pending for renewal are shown
+2. Login as Citizen; go to Renew Trade License; verify only applications pending for renewal are listed",Both employee and citizen renewal screens show only applications that are pending for renewal,"BL/389, BL/390",Yes,,
+TL-036,Owner Type - Individual and Joint (Employee/Citizen),"Ownership type options, Guardian and Relationship fields for Individual/Joint owner in both Employee and Citizen flows",Functional/UI,Select Single/Multiple owner type,"1. Employee and Citizen: verify Ownership Type shows 4 options: Individual/Single, Joint/Multiple, Institutional-Private, Institutional-Government
+2. Employee and Citizen: select Single/Multiple owner; verify Guardian's Name and Relationship with Guardian fields appear in Owner Details
+3. Enter name in Guardian field (Employee and Citizen); verify accepted
+4. Select relationship from dropdown (Employee) / radio button (Citizen); verify selection accepted",All 4 ownership options displayed; Guardian and Relationship fields shown only for Single/Multiple owner; inputs accepted in both Employee and Citizen flows,"BL/394, BL/395, BL/396, BL/397, BL/404, BL/405, BL/406, BL/407",Yes,,
+TL-037,Owner Type - Institutional (Employee/Citizen),"Institutional owner type fields, validations, and +91 prefix for both Employee and Citizen flows",Functional/UI/Validation,Select Institutional Private/Government; enter invalid name and mobile,"1. Employee and Citizen: select Institutional Private/Government owner type
+2. Verify Owner Details section shows: Institution Name (mandatory), Type of Institution (mandatory)
+3. Verify Authorized Person's Details section shows: Name, Designation, Mobile Number (mandatory, with +91 prefix), Telephone Number, Email ID
+4. Enter numeric or special chars in Name field; verify validation message
+5. Enter char/special chars in Mobile Number; verify validation message
+6. Enter more than 10 digits in Mobile Number; verify error message",Institutional fields displayed correctly in both flows; +91 prefix on mobile; all validations trigger with correct messages,"BL/398, BL/399, BL/400, BL/401, BL/402, BL/408, BL/409, BL/410, BL/411, BL/412",Yes,,
+TL-038,Dashboard - Load and Default View,"Dashboard loads with Pan-India default view, correct overview card title, denominaton, and data aggregation",Functional/UI,,"1. Login as Employee; click TL National Dashboard
+2. Verify default view is Pan-India
+3. Verify overview card title is 'Overview' (not 'Pan-India')
+4. Verify denomination is in Lac
+5. Verify all data across cards is sum of all states
+6. Verify national instance does not interfere with state-level instance
+7. Verify DDR and ULB filter displayed at national level
+8. Verify State filter and ULB filter available on dashboard
+9. Verify Date Range filter available
+10. Verify sum of all ULBs within a state equals state's data; sum of all states equals national data
+11. Verify Pan-India card contains only: Total Applications and Total License Issued metrics
+12. Verify 'Total Active ULBs' is removed from Pan-India card","Dashboard loads correctly with all specified default metrics, aggregation logic, and filter controls","BL/413, BL/414, BL/415, BL/416, BL/417, BL/418, BL/419, BL/420, BL/421, BL/422, BL/423, BL/450, BL/451",Yes,,
+TL-039,Dashboard - Date Range and Filter Applicability,"Dashboard filters (Date Range, State, ULB) apply correctly to all cards with defined exceptions",Functional,"Select specific date range, state, and ULB","1. Modify Date Range filter; verify all cards update except 'Today's Collection' metric in Pan-India card
+2. Select a State; verify all cards show data relevant to selected state
+3. Select a ULB; verify all cards show data for that ULB
+4. Verify State and ULB filters apply to all cards when changed",Filters apply correctly; Date Range excludes Today's Collection; State and ULB filters update all cards,"BL/427, BL/428, BL/432, BL/436",Yes,,
+TL-040,Dashboard - State Drill-Down,"State drill-down: ULB filter scoped to state, Top3/Bottom3 show ULBs, KPI and Tax Heads show ULB-level data",Functional,Select a specific state from filter,"1. Select a State from the State filter
+2. Verify ULB filter shows only ULBs for that state
+3. Verify Top 3 and Bottom 3 cards show Top/Bottom 3 ULBs for that state
+4. Verify Key Performance Indicators and Tax Heads cards show data for ULBs within that state",State selection scopes all cards to selected state data; ULB filter filtered; Top/Bottom 3 shows ULBs,"BL/433, BL/434, BL/435",Yes,,
+TL-041,Dashboard - ULB Drill-Down,"ULB drill-down: state filter reflects ULB's state, ward-level data in KPI/Tax Heads, ward-level is final drill-down",Functional,Select a specific ULB from filter,"1. Select a ULB from the ULB filter
+2. Verify State filter reflects only the state of the selected ULB
+3. Verify Key Performance Indicators and Tax Heads cards show data for Wards in that ULB
+4. Verify ward-level drill-down is the final level (no further drill-down beyond ward)",ULB selection shows ward-level data; state filter reflects ULB's state; ward is final drill-down level,"BL/437, BL/438, BL/439, BL/453",Yes,,
+TL-042,Dashboard - Multiple Selection and Dynamic Search,Multiple State/ULB selection and dynamic search in filter dropdowns,Functional,Multiple state and ULB selections; partial text for dynamic search,"1. Attempt to select multiple States; verify possible
+2. Attempt to select multiple ULBs; verify possible
+3. Type in State filter search field; verify results populate dynamically based on input
+4. Type in ULB filter search field; verify results populate dynamically",Multiple State/ULB selection supported; filter dropdowns support dynamic search as user types,"BL/429, BL/430, BL/431",Yes,,
+TL-043,Dashboard - Top3/Bottom3,Top 3 and Bottom 3 performing cards at national and state level,Functional,Pan-India default view and state-selected view,"1. On Pan-India default view: verify Top 3 and Bottom 3 performing cards show Top/Bottom 3 states
+2. Select a State: verify Top 3 and Bottom 3 cards switch to showing Top/Bottom 3 ULBs for that state",Top 3/Bottom 3 cards correctly reflect states at national level and ULBs at state level,"BL/424, BL/433",Yes,,
+TL-044,Dashboard - Revenue Tab,"Revenue tab: Key Performance Indicators and Tax Heads tables with state-wise data, correct headings, and KPI info tooltips",Functional/UI,,"1. Click Revenue tab
+2. Verify 'Key Performance Indicators' table (not 'Key Financial Indicators') heading
+3. Verify sub-line '% values indicate change against same period last year' under KPI heading
+4. Verify same sub-line under Tax Heads heading
+5. Verify KPI and Tax Heads tables show state-wise data
+6. Hover on metrics in Overview card and KPI card; verify definition tooltips from KPI sheet appear","Revenue tab shows correct heading, sub-lines, state-wise data, and tooltip definitions on hover","BL/425, BL/446, BL/447, BL/448, BL/449",Yes,,
+TL-045,Dashboard - Service Tab,Service tab: Status by Boundary table with state-wise data and KPI tooltips,Functional/UI,,"1. Click Service tab
+2. Verify 'Status by Boundary' table shows state-wise data
+3. Hover on metrics in Overview card and Status by Boundary table; verify definition tooltips appear",Service tab Status by Boundary shows correct state-wise data; tooltips display metric definitions,"BL/426, BL/452",Yes,,
+TL-046,Dashboard - Downloads and Sharing,Dashboard cards downloadable as JPG; shareable via email and WhatsApp; tabular data downloadable as Excel,Functional,,"1. Click 'Download as JPG' on any card; verify JPG download
+2. Click Share > Email; verify card shared as JPG via email
+3. Click Share > WhatsApp; verify card shared as JPG via WhatsApp
+4. In Revenue tab: click Download on KPI table > Download as Excel; verify Excel file downloads
+5. In Revenue tab: click Download on Tax Heads table > Download as Excel; verify Excel file downloads
+6. In Service tab: click Download on Status by Boundary table > Download as Excel; verify Excel file downloads","All download and share options functional; correct format (JPG for cards, Excel for tables)","BL/440, BL/441, BL/442, BL/443, BL/444, BL/445",Yes,,
+TL-047,Employee Create - Mobile Number Validation,Mobile number accepts exactly 10 digits; rejects more than 10 digits (Employee Create and Inbox search),UI/Error Handling,"11-digit number, alphabetic string","1. In Employee Create owner mobile field: enter 10 digits; verify accepted
+2. Enter more than 10 digits; verify field restricts or shows error
+3. In Inbox search mobile field: enter 10 digits; verify accepted
+4. Enter alphabetic characters; verify error",Mobile field accepts exactly 10 digits; rejects excess digits and non-numeric input,"BL/34, BL/63, BL/122, BL/169",Yes,,
+TL-048,Employee Create - Search Property Validation,Search property validation: at least one parameter required; mobile number validation within property search,Error Handling,"Empty search, invalid mobile","1. On Search Property screen (I know Property ID): click Search without entering any field
+2. Verify 'Please provide atleast one parameter' validation message
+3. Enter more than 10 digits in Owner's Mobile No.; verify restriction/error",Empty search shows validation; mobile number validates to 10 digits,"BL/31, BL/34",Yes,,
+TL-049,Employee Renewal - Validation,Employee renewal search field validations: mobile number and trade name,Error Handling,"Characters in mobile number, digits in trade name","1. In Trade Owner's Number field: enter char and special chars; verify error message displayed
+2. In Trade Name field: enter digits; verify error message displayed
+3. Enter valid 10-digit mobile; verify accepted
+4. Enter text in Trade Name; verify accepted",Mobile number rejects non-numeric input; Trade Name rejects digits; valid inputs accepted,"BL/185, BL/186, BL/189, BL/190",Yes,,
+TL-050,Citizen Create - Mobile Number Validation (Citizen/Employee),"Citizen create mobile number field: accepts 10 digits, rejects chars/special chars; renewal search mobile validation",Error Handling,"Alphabetic and special characters, valid 10-digit number","1. In Citizen TL create owner mobile field: enter chars and special chars; verify 'Please provide valid mobile number'
+2. Enter valid 10 digits; verify accepted
+3. In Citizen Renewal search mobile field: enter chars and special chars; verify error
+4. In Citizen Renewal search mobile field: enter valid 10 digits; verify accepted",Mobile fields accept 10 digits and reject non-numeric input with correct messages,"BL/303, BL/359, BL/360",Yes,,
+TL-051,Citizen Renewal - Trade License Number Validation,"Citizen renewal search: trade license number accepts valid format, rejects invalid",UI/Error Handling,"Valid TL number format, invalid TL number","1. Enter a valid trade license number in the search field; verify accepted
+2. Enter an invalid trade license number; verify error message displayed",Valid TL number accepted; invalid TL number shows error message,"BL/361, BL/362",Yes,,
+TL-052,Employee Create - No structure (Vehicle) path,Citizen selects 'No' for Confirm Structure Type and navigates to Vehicle Type screen,Functional,,"1. In citizen TL creation, on Confirm Structure Type screen select 'No'
+2. Verify navigation to Vehicle Type screen
+3. Verify Vehicle Type screen displays: 'Choose whether the vehicle is motor driven or pulled by hand' text
+4. Select motor/hand option; verify Next button enabled",No structure selection leads to Vehicle Type screen with correct text and Next button enabled after selection,"BL/249, BL/250, BL/251, BL/252",Yes,,
+TL-053,Citizen Create - Multiple Owners,"Multiple owner type: add owners, primary owner selection (only one), and address info text",Functional/UI,Multiple owner details,"1. On Ownership Type screen select Multiple Owners
+2. Click 'Add Owner' button; verify another Owner Detail block appears
+3. Select Primary Owner checkbox on one owner
+4. Attempt to select Primary Owner checkbox on another owner simultaneously; verify only one can be selected
+5. Click Next to Owner's Address; verify info text: 'Address of the Primary owner' is displayed",Multiple owner flow functional; only one primary owner selectable; address screen shows primary owner info text,"BL/305, BL/306, BL/307, BL/308, BL/313",Yes,,
+TL-054,Citizen Create - Pincode and Address Navigation,Pincode screen and Trade Address navigation including skip options,Functional,"Valid 6-digit pincode, invalid pincode","1. On 'Do you know the pincode?' screen: verify Pincode accepts 6 digits
+2. Enter chars/special chars; verify 'Invalid pincode' message
+3. Verify Next disabled without pincode; verify Skip and Continue navigates to Provide Trade Address
+4. On Provide Trade Address: select City; verify Locality field appears
+5. Select Locality; verify dependent dropdown values appear
+6. Verify Next disabled if Locality not selected
+7. Click Next; enter street address and building number (accept special chars); click Next
+8. Enter Landmark (accepts special chars); click Next or Skip; verify navigation to Ownership Type",Pincode validation works; skip functionality works; address screens navigate correctly with dependencies,"BL/285, BL/286, BL/287, BL/288, BL/289, BL/290, BL/291, BL/292, BL/293, BL/295, BL/296, BL/297, BL/298",Yes,,
+TL-055,Citizen Create - Owner Address,"Owner address: entry, Same as Trade Address checkbox, Next disabled without address",Functional/UI,Owner address details,"1. On Owner's Address screen: verify address entry field accepts input
+2. Check 'Same as Trade's address' checkbox; verify address auto-fills and can be deselected
+3. Verify Next button disabled if no address entered",Owner address accepts input; same-as-trade-address checkbox works; Next disabled without address,"BL/310, BL/311, BL/312",Yes,,
+TL-056,Citizen Create - Document Upload Screens,"Document upload for Proof of Identity, Ownership Document, Owner's Photograph",Functional/UI,Valid document files (PDF/JPG under 2MB),"1. On Proof of Identity screen: select document type from dropdown; click Choose File; verify file manager opens
+2. Verify Next disabled without upload
+3. Verify 'File Type: jpg, PNG or PDF (less than 2 MB)' text shown
+4. Upload document; click Next; verify navigation to Ownership Document screen
+5. Upload ownership document; click Next; verify navigation to Owner's Photograph screen
+6. Verify Choose File button displayed; upload photo; click Next to summary",All three document upload screens functional; file type info displayed; Next disabled without upload; navigation continues correctly,"BL/315, BL/316, BL/317, BL/318, BL/319, BL/320, BL/321",Yes,,
+TL-057,Citizen Create - Citizen flow validation: Name field,Citizen owner name field validation: rejects digits and special characters,Error Handling,Digits and special characters in Name field,"1. In Owner Details screen (Single owner flow), enter digits and special characters in Name field
+2. Verify 'Invalid Name' error message displayed
+3. Enter valid alphabetic name; verify accepted",'Invalid Name' error shown for digits/special chars; valid name accepted,BL/301,Yes,,
+TL-058,Citizen Create - Gender radio and Next button disabled,Gender radio button selection and Next button behavior on ownership type screen,UI,,"1. On Owner Type selection screen: verify Next button disabled with no radio button selected
+2. On Owner Details: verify Gender radio button can be selected
+3. Verify mandatory fields: Next disabled if mandatory fields empty",Next button disabled until required selections made; Gender radio works; mandatory fields enforced,"BL/299, BL/302, BL/304",Yes,,
+TL-059,Employee Create - Summary / View Application,Employee view application summary from Search Application and verify all sections,UI,Submitted TL application,"1. From Search Application click on Application Number hyperlink
+2. Verify Application Details page displayed with Take Action button
+3. From Summary screen verify all Trade Details: Trade Name, Structure Type/Sub-type, Trade Commencement Date, Trade Category/Type/Sub-type, Accessory details
+4. Verify Location Details: Property ID, Owner's Name, Address, Status
+5. Verify Owner Details: Name, Gender, Guardian, Owner Address
+6. Verify Document Details section with uploaded docs
+7. Verify Edit icons on all sections",Application summary shows all sections with correct data and Edit icons; Take Action button available,"BL/47, BL/151",Yes,,
+TL-060,Employee Create - Trade Units Commencement Date,Trade Commencement Date picker interaction,UX,,"1. Navigate to Trade Commencement Date screen
+2. Click calendar icon; verify calendar opens
+3. Select any date; verify date displayed in input field and Next button enabled",Calendar opens on icon click; selected date populates field; Next button enabled after date selection,"BL/11, BL/12",Yes,,
+TL-061,Citizen Create - Trade Units Commencement Date,Citizen Trade Commencement Date calendar picker,UI,,"1. Navigate to commencement date step in citizen TL creation
+2. Click calendar icon; verify calendar opens
+3. Click any date; verify it appears in input field",Calendar opens and selected date populates input field,"BL/259, BL/260",Yes,,
+TL-062,Employee Workflow - Created Status,Verify application status is 'Created' when counter employee submits new application,UI,New application submitted by counter employee,"1. Login as counter employee; create and submit a new TL application
+2. Verify application status shown as 'Created' in inbox",Application status shows as 'Created' after counter employee submission,BL/212,Yes,,
+TL-063,Employee Create - Accessories No Path,Selecting 'No' for accessories skips Accessories screen and navigates to property linking,Functional,,"1. On 'Do you have any accessories?' screen select No
+2. Click Next; verify navigation skips Accessories screen and goes to 'Do you know your property?' screen",Selecting No for accessories skips Trade Accessories screen; navigates directly to property/location step,"BL/16, BL/17",Yes,,
+TL-064,Citizen Create - Trade Units Dependencies,Trade Units dropdowns are dependent: Trade Type values driven by Trade Category; Trade Sub-type by Trade Type; UOM auto-populates,Functional,"Different Trade Category, Type, Sub-type combinations","1. Select Goods as Trade Category; verify Trade Type dropdown shows relevant values
+2. Select a Trade Type; verify Trade Sub-type dropdown shows relevant values
+3. Select a Trade Type and Sub-type; verify UOM field auto-populates as 'HP'
+4. Verify UOM Value field accepts numeric input",Trade Type values depend on Category; Sub-type depends on Type; UOM auto-populates per selection,"BL/263, BL/264, BL/265, BL/266",Yes,,
+TL-065,Employee Inbox - Search Property Mobile Validation,"Mobile number field in Search Property screen: +91 display, max 10 digits",UI,11-digit number,"1. On Search Property screen (I know Property ID option): verify +91 prefix shown in Owner's Mobile No. field
+2. Enter more than 10 digits; verify field restricts input or shows error",+91 prefix displayed; mobile field enforces 10-digit limit,"BL/33, BL/34",Yes,,
+TL-066,Citizen Payment - SMS Notification,SMS notification sent to applicant's registered mobile after application submission and payment,Functional,Valid mobile number linked to application,"1. After citizen submits TL application, verify success screen shows notification text: 'The Notification along with the application number is sent to your registered mobile number...'
+2. After employee completes payment, verify success screen text confirms notification sent to applicant's mobile",Notification text displayed on success screens after submission and payment; SMS sent to registered mobile,"BL/132, BL/177, BL/207, BL/328, BL/374",No (Manual),,
+TL-067,Citizen Create - Accessories UOM Auto-populate,Accessories UOM auto-populates as 'HP' based on selected accessory in both Citizen and Employee flows,UI,Select any accessory from dropdown,"1. In Trade Accessories screen (Employee/Citizen): select an accessory from Accessory dropdown
+2. Verify UOM field auto-populates as 'HP'
+3. Verify UOM Value field accepts numeric input
+4. Enter characters in UOM Value; verify 'Wrong UOM value' message",UOM auto-populates to 'HP' on accessory selection; UOM Value validates input,"BL/108, BL/109, BL/256, BL/257, BL/276, BL/277",Yes,,
+TL-068,Citizen Renewal - Penalty Display for Expired License,Expired license shows penalty information on Renewal screen,UI,Citizen account with expired license,"1. Login as citizen and go to Renew Trade License
+2. Verify expired licenses show status: 'Expired and expired on dd/mm/yyyy. Penalty of XX will be charged for late renewal.'",Expired licenses display expiry date and penalty amount on the renewal list screen,BL/356,Yes,,
+TL-069,Citizen Renewal - Info Text and Pre-populated Data,Renewal summary page info text and pre-populated field verification,UI,Valid trade license for renewal,"1. Navigate to Renewal summary page (Renew Trade License Application)
+2. Verify info text: 'If there are changes in the trade details, Please make changes in the respective section. If there are no changes, please go ahead and submit the application.'
+3. Verify all original trade details are pre-populated",Info text and pre-populated data displayed correctly on renewal summary,"BL/367, BL/370",Yes,,
+TL-070,Employee Create - Property Details UI Check,Property Details screen elements after linking property,UI,Linked property,"1. After linking a property in TL application, navigate to Property Details screen
+2. Verify screen shows: Property ID, Owner's Name, Address, Status, View More Details link, Change Property button, Next button",Property Details screen displays all specified elements,BL/44,Yes,,
+TL-071,Employee Create - Search Property Screen UI,Search Property screen radio option display and OR separator between parameters,UI,,"1. On Search Property screen verify two radio options: 'I know my Property ID' and 'I want to search using Door Number'
+2. Select 'I know my Property ID'; verify OR text displayed between search parameters (other than City)",Both radio options displayed; OR separator shown between search parameters,"BL/29, BL/32",Yes,,
+TL-072,Citizen Create - Building Type Info Text,Building Type screen displays Pucca/Kutcha description info text,UI,,"1. Navigate to Building Type screen in citizen TL creation
+2. Verify heading text: 'Choose the type of building in which the trade is run. Is it Pucca or Kuccha building?'
+3. Verify info text explaining Pucca (solid/permanent materials) and Katcha (bamboo/mud/grass materials) is displayed",Building Type screen shows question text and descriptive info text for Pucca and Kutcha,"BL/253, BL/254",Yes,,

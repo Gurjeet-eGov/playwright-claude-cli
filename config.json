@@ -1,0 +1,16 @@
+{
+  "host": "https://unified-demo.digit.org/",
+  "stateCode": "pg",
+  "cityCode": "citya",
+  "auth_header": {
+    "authorization": "Basic ABC"
+  },
+  "credentials": {
+    "PT": {
+      "SU": {"username": "PT_SU", "password": "_6gK@5gE", "tenantId": "pg.citya", "type": "Employee"}
+    },
+    "TL": {
+      "SU": {"username": "TL_SU", "password": "eGov@1234", "tenantId": "pg.citya", "type": "Employee"}
+    }
+  }
+}

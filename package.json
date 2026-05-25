@@ -1,0 +1,28 @@
+{
+  "name": "playwright-claude-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test tests/smoke/",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report reports/html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gurjeet-eGov/playwright-claude-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gurjeet-eGov/playwright-claude-cli/issues"
+  },
+  "homepage": "https://github.com/Gurjeet-eGov/playwright-claude-cli#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  }
+}
